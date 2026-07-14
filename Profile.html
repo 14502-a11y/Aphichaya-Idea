@@ -1,200 +1,58 @@
-`img{
-    width:300px;
-    border-radius:15px;
-    border:5px solid #FFB6C1;
-    box-shadow:0 5px 15px rgba(255,105,180,0.3);
-    transition:0.3s;
+`<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ผลงาน - Portfolio Apitchaya</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-img:hover{
-    transform:scale(1.05);
+body{
+    font-family:Tahoma,sans-serif;
+    background:#FFF5FA;
+    color:#6B3556;
 }
 
-/* Footer */
-footer{
-    background:#FF69B4;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:30px;
-}
-
-</style>
 header{
-    background:linear-gradient(135deg,#5d4037,#8d6e63);
+    background:linear-gradient(135deg,#FF69B4,#FFC0CB);
     color:white;
-    padding:30px 8%;
+    padding:20px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 .logo h1{
-    font-size:42px;
+    font-size:40px;
 }
-
-.logo p{
-    color:#efebe9;
-}
-
-/* Menu */
 
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:15px;
     padding:10px 18px;
-    border-radius:25px;
-    transition:.3s;
+    border-radius:20px;
 }
 
 nav a:hover{
     background:white;
-    color:#5d4037;
+    color:#E91E63;
 }
-
-/* Content */
 
 .container{
-    min-height:80vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:50px 20px;
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
 }
 
-.profile-card{
-    width:900px;
+.portfolio-card{
     background:white;
-    border-radius:30px;
-    padding:40px;
-    display:flex;
-    gap:40px;
-    align-items:center;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.profile-card img{
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    object-fit:cover;
-    border:8px solid #d7ccc8;
-}
-
-.info{
-    flex:1;
-}
-
-.info h2{
-    color:#5d4037;
-    margin-bottom:20px;
-    font-size:34px;
-}
-
-.info p{
-    font-size:20px;
-    margin:12px 0;
-    line-height:1.8;
-}
-
-footer{
-    background:#5d4037;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-header{
-    justify-content:center;
-    text-align:center;
-}
-
-nav{
-    margin-top:20px;
-}
-
-nav a{
-    display:inline-block;
-    margin:5px;
-}
-
-.profile-card{
-    flex-direction:column;
-    text-align:center;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-<h1>Portfolio</h1>
-<p>Apitchaya Busuwa</p>
-</div>
-
-<nav>
-<a href="index.html">หน้าหลัก</a>
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="education.html">การศึกษา</a>
-<a href="portfolio.html">ผลงาน</a>
-<a href="contact.html">ติดต่อ</a>
-</nav>
-
-</header>
-
-<section class="container">
-
-<div class="profile-card">
-
-<img src="images/profile.jpg" alt="รูปโปรไฟล์">
-
-<div class="info">
-
-<h2>👤 ประวัติส่วนตัว</h2>
-
-<p><strong>ชื่อ-สกุล :</strong> นางสาวอภิชญา บุสุวะ</p>
-
-<p><strong>ชื่อเล่น :</strong> ไอเดีย</p>
-
-<p><strong>วันเกิด :</strong> 7 มิถุนายน 2552</p>
-
-<p><strong>อายุ :</strong> 17 ปี</p>
-
-<p><strong>กำลังศึกษา :</strong> ชั้นมัธยมศึกษาปีที่ 6/1</p>
-
-<p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
-
-<p><strong>งานอดิเรก :</strong> ฟังเพลง ดูหนัง อ่านหนังสือ</p>
-
-<p><strong>คติประจำใจ :</strong> ทำวันนี้ให้ดีที่สุด</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Apitchaya Busuwa Portfolio
-
-</footer>
-
-</body>
-
-</html>
-```
-
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px
