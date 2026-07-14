@@ -1,160 +1,157 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ผลงาน - Portfolio Apitchaya</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        body{
-            font-family:Tahoma,sans-serif;
-            background:#FFF5FA;
-            color:#6B3556;
-        }
+body{
+    font-family:Tahoma,sans-serif;
+    background:#FFF5FA;
+    color:#6B3556;
+}
 
-        header{
-            background:linear-gradient(135deg,#FF69B4,#FFC0CB);
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
+header{
+    background:linear-gradient(135deg,#FF69B4,#FFC0CB);
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
 
-        nav{
-            background:#FFB6C1;
-            text-align:center;
-            padding:15px;
-        }
+.logo h1{
+    font-size:40px;
+}
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:0 12px;
-            font-weight:bold;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    padding:10px 18px;
+    border-radius:20px;
+}
 
-        nav a:hover{
-            color:#E91E63;
-        }
+nav a:hover{
+    background:white;
+    color:#E91E63;
+}
 
-        main{
-            width:90%;
-            max-width:900px;
-            margin:30px auto;
-        }
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+}
 
-        section{
-            background:white;
-            padding:25px;
-            border-radius:15px;
-            box-shadow:0 5px 15px rgba(255,105,180,.3);
-        }
+.portfolio-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(255,105,180,.25);
+}
 
-        article{
-            background:#FFF0F5;
-            border-left:6px solid #FF69B4;
-            padding:15px;
-            margin:15px 0;
-            border-radius:10px;
-        }
+.portfolio-card h2{
+    text-align:center;
+    color:#E91E63;
+    margin-bottom:25px;
+}
 
-        h2{
-            color:#E91E63;
-            margin-bottom:10px;
-        }
+.portfolio-box{
+    background:#FFF0F5;
+    border-left:6px solid #FF69B4;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+    text-align:center;
+}
 
-        p{
-            line-height:1.8;
-        }
+.portfolio-box h3{
+    color:#E91E63;
+    margin-bottom:10px;
+}
 
-        ul{
-            margin-left:25px;
-            line-height:1.8;
-        }
+.portfolio-box img{
+    width:300px;
+    border-radius:15px;
+    border:4px solid #FFC0CB;
+    margin:15px 0;
+}
 
-        footer{
-            background:#FF69B4;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:30px;
-        }
-
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:10px 20px;
-            background:#FF69B4;
-            color:white;
-            text-decoration:none;
-            border-radius:20px;
-        }
-
-        .btn:hover{
-            background:#E91E63;
-        }
-    </style>
+footer{
+    background:#FF69B4;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>🌸 Portfolio</h1>
-    <p>Apitchaya Busuwa</p>
-</header>
+<div class="logo">
+<h1>Portfolio</h1>
+<p>Apitchaya Busuwa</p>
+</div>
 
 <nav>
-    <a href="index.html">หน้าหลัก</a>
-    <a href="profile.html">ประวัติส่วนตัว</a>
-    <a href="education.html">การศึกษา</a>
-    <a href="portfolio.html">ผลงาน</a>
-    <a href="contact.html">ติดต่อ</a>
+<a href="index.html">หน้าหลัก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">การศึกษา</a>
+<a href="portfolio.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
 </nav>
+</header>
 
-<main>
+<div class="container">
+<div class="portfolio-card">
 
-<section>
+<h2>💼 ผลงานของฉัน</h2>
 
-<h2>👩 ประวัติส่วนตัว</h2>
+<div class="portfolio-box">
+<h3>ผลงานที่ 1</h3>
+<img src="images/work1.jpg" alt="ผลงานที่ 1">
+<p>เว็บไซต์ Portfolio ด้วย HTML และ CSS</p>
+</div>
 
-<article>
-<p><strong>ชื่อ-สกุล :</strong> อภิชญา บุสุวะ</p>
-<p><strong>ชื่อเล่น :</strong> ไอเดีย</p>
-<p><strong>วันเกิด :</strong> 7 มิถุนายน 2552</p>
-<p><strong>อายุ :</strong> 17 ปี</p>
-</article>
+<div class="portfolio-box">
+<h3>ผลงานที่ 2</h3>
+<img src="images/work2.jpg" alt="ผลงานที่ 2">
+<p>ออกแบบเว็บไซต์ Responsive Design</p>
+</div>
 
-<article>
-<h2>🎓 การศึกษา</h2>
-<p>กำลังศึกษาชั้นมัธยมศึกษาปีที่ 6</p>
-<p>โรงเรียนพานทอง</p>
-<p>แผนการเรียน วิทยาศาสตร์ - คณิตศาสตร์</p>
-</article>
+<div class="portfolio-box">
+<h3>ผลงานที่ 3</h3>
+<img src="images/work3.jpg" alt="ผลงานที่ 3">
+<p>พัฒนาเว็บไซต์ด้วย GitHub Pages</p>
+</div>
 
-<article>
-<h2>💖 งานอดิเรก</h2>
-<ul>
-    <li>🎵 ฟังเพลง</li>
-    <li>🎮 เล่นเกม</li>
-    <li>🎸 เล่นดนตรี</li>
-    <li>💃 เต้น</li>
-</ul>
-</article>
-
-<a href="index.html" class="btn">🏠 กลับหน้าหลัก</a>
-
-</section>
-
-</main>
+</div>
+</div>
 
 <footer>
-    <p>&copy; 2026 Apitchaya Busuwa Portfolio</p>
+© 2026 Apitchaya Busuwa Portfolio
 </footer>
 
 </body>
 </html>
+<style>
+body{ font-family:Tahoma,sans-serif; background:#FFF5FA; color:#6B3556; }
+header{ background:linear-gradient(135deg,#FF69B4,#FFC0CB); color:white; }
+.container{ width:90%; max-width:1100px; margin:40px auto; }
+.container h2{ text-align:center; color:#E91E63; margin-bottom:30px; }
+.work{ background:#FFF0F5; padding:20px; margin-bottom:30px; border-radius:20px; text-align:center; border:3px solid #FFC0CB; box-shadow:0 5px 15px rgba(255,105,180,.25); }
+.work h3{ color:#E91E63; margin-bottom:15px; }
+.work img{ width:300px; border-radius:15px; border:4px solid #FFB6C1; margin-bottom:15px; }
+.work p{ color:#6B3556; font-size:18px; }
+footer{ background:#FF69B4; color:white; text-align:center; padding:15px; }
+</style>
