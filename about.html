@@ -3,17 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัวของฉัน</title>
-    <!-- เชื่อมโยงไฟล์ตกแต่งสไตล์ (css) ใบเดิมที่มีอยู่ -->
-    <link rel="stylesheet" href="style.css"> 
+    <title>ประวัติส่วนตัว - Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Tahoma,sans-serif;
+            background:#FFF5FA;
+            color:#6B3556;
+        }
+
+        header{
+            background:linear-gradient(135deg,#FF69B4,#FFC0CB);
+            color:white;
+            text-align:center;
+            padding:30px;
+        }
+
+        nav{
+            background:#FFB6C1;
+            text-align:center;
+            padding:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 12px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#E91E63;
+        }
+
+        main{
+            width:90%;
+            max-width:900px;
+            margin:30px auto;
+        }
+
+        section{
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(255,105,180,.3);
+        }
+
+        article{
+            background:#FFF0F5;
+            border-left:6px solid #FF69B4;
+            padding:15px;
+            margin:15px 0;
+            border-radius:10px;
+        }
+
+        h2{
+            color:#E91E63;
+            margin-bottom:10px;
+        }
+
+        p{
+            line-height:1.8;
+        }
+
+        ul{
+            margin-left:25px;
+            line-height:1.8;
+        }
+
+        footer{
+            background:#FF69B4;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:10px 20px;
+            background:#FF69B4;
+            color:white;
+            text-decoration:none;
+            border-radius:20px;
+        }
+
+        .btn:hover{
+            background:#E91E63;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>ประวัติส่วนตัว</h1>
-    <p>ยินดีต้อนรับสู่หน้าประวัติส่วนตัวของฉัน...</p>
+<header>
+    <h1>🌸 Portfolio</h1>
+    <p>Apitchaya Busuwa</p>
+</header>
 
-    <!-- ปุ่มสำหรับกดกลับหน้าหลัก -->
-    <a href="index.html">กลับหน้าหลัก</a>
+<nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html">การศึกษา</a>
+    <a href="portfolio.html">ผลงาน</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
+
+<main>
+
+<section>
+
+<h2>👩 ประวัติส่วนตัว</h2>
+
+<article>
+<p><strong>ชื่อ-สกุล :</strong> อภิชญา บุสุวะ</p>
+<p><strong>ชื่อเล่น :</strong> ไอเดีย</p>
+<p><strong>วันเกิด :</strong> 7 มิถุนายน 2552</p>
+<p><strong>อายุ :</strong> 17 ปี</p>
+</article>
+
+<article>
+<h2>🎓 การศึกษา</h2>
+<p>กำลังศึกษาชั้นมัธยมศึกษาปีที่ 6</p>
+<p>โรงเรียนพานทอง</p>
+<p>แผนการเรียน วิทยาศาสตร์ - คณิตศาสตร์</p>
+</article>
+
+<article>
+<h2>💖 งานอดิเรก</h2>
+<ul>
+    <li>🎵 ฟังเพลง</li>
+    <li>🎮 เล่นเกม</li>
+    <li>🎸 เล่นดนตรี</li>
+    <li>💃 เต้น</li>
+</ul>
+</article>
+
+<a href="index.html" class="btn">🏠 กลับหน้าหลัก</a>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Apitchaya Busuwa Portfolio</p>
+</footer>
 
 </body>
 </html>
