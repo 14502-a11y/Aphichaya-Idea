@@ -1,213 +1,119 @@
-```html
-<!DOCTYPE html>
-<html lang="th">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ช่องทางการติดต่อ - Portfolio อภิชญา</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Tahoma,sans-serif;
-    background:#f6f1ed;
-    color:#333;
+`body{
+    font-family: Tahoma, sans-serif;
+    background: #FFF5FA;
+    color: #6B3556;
 }
 
 /* Header */
-
 header{
-    background:linear-gradient(135deg,#5d4037,#8d6e63);
-    color:white;
-    padding:30px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
-
-.logo h1{
-    font-size:42px;
+    background: linear-gradient(135deg, #FF69B4, #FFC0CB);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    box-shadow: 0 5px 15px rgba(255,105,180,0.3);
 }
 
 .logo p{
-    color:#efebe9;
+    color: #FFF0F5;
 }
 
 /* Menu */
-
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    padding:10px 18px;
-    border-radius:25px;
-    transition:.3s;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 
 nav a:hover{
-    background:white;
-    color:#5d4037;
+    background: white;
+    color: #FF1493;
 }
 
 /* Content */
-
 .container{
-    min-height:80vh;
-    padding:50px 20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    min-height: 80vh;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-card{
-    background:white;
-    width:900px;
-    padding:45px;
-    border-radius:30px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    background: white;
+    width: 900px;
+    padding: 45px;
+    border-radius: 30px;
+    border: 3px solid #FFC0CB;
+    box-shadow: 0 15px 35px rgba(255,105,180,0.2);
 }
 
 .contact-card h2{
-    text-align:center;
-    color:#5d4037;
-    font-size:38px;
-    margin-bottom:35px;
+    text-align: center;
+    color: #E91E63;
+    font-size: 38px;
+    margin-bottom: 35px;
 }
 
 .contact-box{
-    background:#f8f4f1;
-    border-left:8px solid #8d6e63;
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:15px;
-    transition:.3s;
+    background: #FFF0F5;
+    border-left: 8px solid #FF69B4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
 }
 
 .contact-box:hover{
-    transform:translateX(10px);
-    box-shadow:0 8px 15px rgba(0,0,0,.1);
+    transform: translateX(10px);
+    box-shadow: 0 8px 15px rgba(255,105,180,0.2);
 }
 
 .contact-box h3{
-    color:#6d4c41;
-    margin-bottom:10px;
-    font-size:24px;
+    color: #E91E63;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .contact-box p{
-    font-size:20px;
-    line-height:1.8;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #6B3556;
 }
 
 /* Footer */
-
 footer{
-    background:#5d4037;
-    color:white;
-    text-align:center;
-    padding:15px;
+    background: linear-gradient(135deg, #FF69B4, #FF85C2);
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
 /* Mobile */
-
 @media(max-width:768px){
 
 header{
-    justify-content:center;
-    text-align:center;
+    justify-content: center;
+    text-align: center;
 }
 
 nav{
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 nav a{
-    display:inline-block;
-    margin:5px;
+    display: inline-block;
+    margin: 5px;
 }
 
 .contact-card{
-    padding:25px;
+    padding: 25px;
 }
 
 }
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-<h1>Portfolio</h1>
-<p>Apitchaya Busuwa</p>
-</div>
-
-<nav>
-<a href="index.html">หน้าหลัก</a>
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="education.html">การศึกษา</a>
-<a href="portfolio.html">ผลงาน</a>
-<a href="contact.html">ติดต่อ</a>
-</nav>
-
-</header>
-
-<section class="container">
-
-<div class="contact-card">
-
-<h2>📞 ช่องทางการติดต่อ</h2>
-
-<div class="contact-box">
-<h3>📱 โทรศัพท์</h3>
-<p>0927764275</p>
-</div>
-
-<div class="contact-box">
-<h3>📧 อีเมล</h3>
-<p>apichayabusuwa@gmail.com</p>
-</div>
-
-<div class="contact-box">
-<h3>📘 Facebook</h3>
-<p> Aphichaya Busuwa</p>
-</div>
-
-<div class="contact-box">
-<h3>📷 Instagram</h3>
-<p>i.d.e.a.7.6.1.6.</p>
-</div>
-
-<div class="contact-box">
-<h3>💻 GitHub</h3>
-<p>https://github.com/yourusername</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Apitchaya Busuwa Portfolio
-
-</footer>
-
-</body>
-
-</html>
 ```
