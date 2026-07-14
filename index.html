@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>หน้าหลัก | Portfolio Apitchaya</title>
+<title>หน้าหลัก | Portfolio</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -22,13 +23,13 @@ header{
     background:linear-gradient(135deg,#FF69B4,#FFC0CB);
     color:white;
     text-align:center;
-    padding:30px;
+    padding:25px;
 }
 
 nav{
     background:#FFB6C1;
-    text-align:center;
     padding:15px;
+    text-align:center;
 }
 
 nav a{
@@ -42,13 +43,10 @@ nav a:hover{
     color:#E91E63;
 }
 
-main{
+.container{
     width:90%;
-    max-width:1000px;
+    max-width:900px;
     margin:40px auto;
-}
-
-.hero{
     background:white;
     padding:30px;
     border-radius:20px;
@@ -56,7 +54,7 @@ main{
     box-shadow:0 5px 15px rgba(255,105,180,.3);
 }
 
-.hero img{
+.profile{
     width:220px;
     height:220px;
     border-radius:50%;
@@ -65,13 +63,12 @@ main{
     margin-bottom:20px;
 }
 
-.hero h2{
+h2{
     color:#E91E63;
     margin-bottom:15px;
-    font-size:36px;
 }
 
-.hero p{
+p{
     font-size:18px;
     line-height:1.8;
 }
@@ -79,10 +76,10 @@ main{
 .btn{
     display:inline-block;
     margin-top:25px;
-    padding:12px 25px;
     background:#FF69B4;
     color:white;
     text-decoration:none;
+    padding:12px 25px;
     border-radius:25px;
 }
 
@@ -90,16 +87,59 @@ main{
     background:#E91E63;
 }
 
-.menu{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
+footer{
+    background:#FF69B4;
+    color:white;
+    text-align:center;
+    padding:15px;
     margin-top:40px;
 }
 
-.card{
-    background:white;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 5px
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Portfolio</h1>
+    <p>Apitchaya Busuwa</p>
+</header>
+
+<nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html">การศึกษา</a>
+    <a href="portfolio.html">ผลงาน</a>
+    <a href="contact.html">ติดต่อ</a>
+</nav>
+
+<div class="container">
+
+    <img src="images/profile.jpg" alt="รูปโปรไฟล์" class="profile">
+
+    <h2>ยินดีต้อนรับ</h2>
+
+    <p>
+        สวัสดีค่ะ ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของ
+    </p>
+
+    <h2>อภิชญา บุสุวะ</h2>
+
+    <p>
+        นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
+        โรงเรียนพานทอง
+    </p>
+
+    <a href="profile.html" class="btn">
+        เข้าสู่ประวัติส่วนตัว
+    </a>
+
+</div>
+
+<footer>
+    © 2026 Apitchaya Busuwa Portfolio
+</footer>
+
+</body>
+</html>
