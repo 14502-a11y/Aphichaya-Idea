@@ -3,23 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>การศึกษา - Portfolio Apitchaya</title>
+
+<title>การศึกษา | Portfolio Apitchaya</title>
 
 <style>
 
+/* ==========================
+   Reset CSS
+========================== */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* ==========================
+   Body
+========================== */
 body{
     font-family:Tahoma,sans-serif;
     background:#FFF5FA;
     color:#6B3556;
 }
 
-/* Header */
+/* ==========================
+   Header
+========================== */
 header{
     background:linear-gradient(135deg,#FF69B4,#FFC0CB);
     color:white;
@@ -31,14 +40,16 @@ header{
 }
 
 .logo h1{
-    font-size:40px;
+    font-size:38px;
 }
 
 .logo p{
-    color:#FFF0F5;
+    font-size:18px;
 }
 
-/* Menu */
+/* ==========================
+   Navigation
+========================== */
 nav a{
     color:white;
     text-decoration:none;
@@ -53,7 +64,9 @@ nav a:hover{
     color:#E91E63;
 }
 
-/* Content */
+/* ==========================
+   Education Section
+========================== */
 .container{
     width:90%;
     max-width:900px;
@@ -62,8 +75,8 @@ nav a:hover{
 
 .education-card{
     background:white;
-    padding:30px;
     border-radius:20px;
+    padding:30px;
     box-shadow:0 5px 15px rgba(255,105,180,.25);
 }
 
@@ -71,21 +84,22 @@ nav a:hover{
     text-align:center;
     color:#E91E63;
     margin-bottom:30px;
-    font-size:36px;
 }
 
+/* ==========================
+   Education Box
+========================== */
 .education-box{
     background:#FFF0F5;
     border-left:6px solid #FF69B4;
-    padding:20px;
     border-radius:15px;
+    padding:20px;
     margin-bottom:20px;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .education-box:hover{
-    transform:translateX(8px);
-    box-shadow:0 5px 15px rgba(255,105,180,.25);
+    transform:translateX(5px);
 }
 
 .education-box h3{
@@ -94,11 +108,12 @@ nav a:hover{
 }
 
 .education-box p{
-    font-size:18px;
     line-height:1.8;
 }
 
-/* Footer */
+/* ==========================
+   Footer
+========================== */
 footer{
     background:#FF69B4;
     color:white;
@@ -130,7 +145,7 @@ footer{
 
 </header>
 
-<section class="container">
+<div class="container">
 
 <div class="education-card">
 
@@ -158,10 +173,10 @@ footer{
 
 </div>
 
-</section>
+</div>
 
 <footer>
-© 2026 Apitchaya Busuwa Portfolio
+<p>© 2026 Portfolio | Apitchaya Busuwa</p>
 </footer>
 
 </body>
