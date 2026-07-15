@@ -1,147 +1,76 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ประวัติส่วนตัว - Portfolio Apitchaya</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Tahoma,sans-serif;
-    background:#FFF5FA;
-    color:#6B3556;
-}
-
-header{
-    background:linear-gradient(135deg,#FF69B4,#FFC0CB);
-    color:white;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-}
-
-.logo h1{
-    font-size:40px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:15px;
-    padding:10px 18px;
-    border-radius:20px;
-}
-
-nav a:hover{
-    background:white;
-    color:#E91E63;
-}
-
-.container{
-    width:90%;
-    max-width:1000px;
-    margin:40px auto;
-}
-
-.profile{
-    background:white;
-    border-radius:20px;
-    padding:30px;
-    box-shadow:0 5px 15px rgba(255,105,180,.25);
-    text-align:center;
-}
-
-.profile img{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    border:6px solid #FFC0CB;
-    object-fit:cover;
-    margin-bottom:20px;
-}
-
-.profile h2{
-    color:#E91E63;
-    margin-bottom:20px;
-}
-
-.info{
-    background:#FFF0F5;
-    border-left:6px solid #FF69B4;
-    border-radius:15px;
-    padding:20px;
-    text-align:left;
-    margin-top:20px;
-}
-
-.info p{
-    font-size:18px;
-    margin:10px 0;
-}
-
-footer{
-    background:#FF69B4;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:40px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFF0F5; /* สีชมพูอ่อน LavenderBlush */
+            color: #4A4A4A;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .profile-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4); /* เงาสีชมพูจางๆ */
+            width: 350px;
+            text-align: center;
+            border: 2px solid #FFB6C1; /* ขอบสีชมพู LightPink */
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #FFC0CB; /* สีชมพู Pink */
+            margin: 0 auto 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #FFF;
+        }
+        h1 {
+            color: #FF69B4; /* หัวข้อสีชมพูเข้ม HotPink */
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .nickname {
+            color: #FFB6C1; /* ชื่อเล่นสีชมพู LightPink */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: left;
+        }
+        strong {
+            color: #FF69B4; /* เน้นข้อความด้วยสีชมพู */
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<div class="logo">
-<h1>Portfolio</h1>
-<p>Apitchaya Busuwa</p>
-</div>
-
-<nav>
-<a href="index.html">หน้าหลัก</a>
-<a href="profile.html">ประวัติส่วนตัว</a>
-<a href="education.html">การศึกษา</a>
-<a href="portfolio.html">ผลงาน</a>
-<a href="contact.html">ติดต่อ</a>
-</nav>
-</header>
-
-<section class="container">
-
-<article class="profile">
-
-<h2>🌸 ประวัติส่วนตัว 🌸</h2>
-
-<img src="images/profile.jpg" alt="รูปโปรไฟล์">
-
-<div class="info">
-<p><strong>ชื่อ-นามสกุล :</strong> อภิชญา บุษวะ</p>
-<p><strong>ชื่อเล่น :</strong> ............</p>
-<p><strong>วันเกิด :</strong> ............</p>
-<p><strong>อายุ :</strong> ............ ปี</p>
-<p><strong>ที่อยู่ :</strong> ............</p>
-<p><strong>เบอร์โทร :</strong> 08X-XXX-XXXX</p>
-<p><strong>E-mail :</strong> example@email.com</p>
-<p><strong>งานอดิเรก :</strong> ฟังเพลง ดูหนัง อ่านหนังสือ</p>
-<p><strong>ความสามารถพิเศษ :</strong> HTML, CSS, Microsoft Office</p>
-</div>
-
-</article>
-
-</section>
-
-<footer>
-© 2026 Apitchaya Busuwa Portfolio
-</footer>
+    <div class="profile-card">
+        <!-- ส่วนรูปภาพ (สามารถเปลี่ยน src เป็นลิงก์รูปของคุณได้ในโฟลเดอร์ images) -->
+        <div class="avatar">รูปภาพของคุณ</div>
+        
+        <h1>ชื่อ-นามสกุลของคุณ</h1>
+        <div class="nickname">(ชื่อเล่นของคุณ)</div>
+        
+        <p><strong>การศึกษา</strong>: มหาวิทยาลัย / โรงเรียนของคุณ</p>
+        <p><strong>ความสามารถ</strong>: ทักษะหรือสิ่งที่คุณถนัด</p>
+        <p><strong>งานอดิเรก</strong>: สิ่งที่ชอบทำในเวลาว่าง</p>
+        <p><strong>คติประจำใจ</strong>: ข้อคิดเตือนใจของคุณ</p>
+    </div>
 
 </body>
 </html>
