@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ติดต่อ - Portfolio Apitchaya</title>
+
+<title>ติดต่อ | Portfolio Apitchaya</title>
 
 <style>
+
+/* =========================
+   Reset
+========================= */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* =========================
+   Body
+========================= */
+
 body{
     font-family:Tahoma,sans-serif;
     background:#FFF5FA;
     color:#6B3556;
 }
+
+/* =========================
+   Header
+========================= */
 
 header{
     background:linear-gradient(135deg,#FF69B4,#FFC0CB);
@@ -32,12 +47,17 @@ header{
     font-size:40px;
 }
 
+/* =========================
+   Navigation
+========================= */
+
 nav a{
     color:white;
     text-decoration:none;
     margin-left:15px;
     padding:10px 18px;
     border-radius:20px;
+    transition:.3s;
 }
 
 nav a:hover{
@@ -45,17 +65,25 @@ nav a:hover{
     color:#E91E63;
 }
 
+/* =========================
+   Container
+========================= */
+
 .container{
     width:90%;
     max-width:900px;
     margin:40px auto;
 }
 
+/* =========================
+   Contact Card
+========================= */
+
 .contact-card{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(255,105,180,.25);
+    background:#FFD6EA;
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 8px 20px rgba(255,105,180,.30);
 }
 
 .contact-card h2{
@@ -64,12 +92,22 @@ nav a:hover{
     margin-bottom:25px;
 }
 
+/* =========================
+   Contact Box
+========================= */
+
 .contact-box{
-    background:#FFF0F5;
-    border-left:6px solid #FF69B4;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:15px;
+    background:white;
+    border-left:8px solid #FF69B4;
+    border-radius:15px;
+    padding:18px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.contact-box:hover{
+    transform:translateY(-4px);
+    box-shadow:0 5px 12px rgba(255,105,180,.30);
 }
 
 .contact-box h3{
@@ -77,19 +115,26 @@ nav a:hover{
     margin-bottom:8px;
 }
 
+/* =========================
+   Footer
+========================= */
+
 footer{
     background:#FF69B4;
     color:white;
     text-align:center;
-    padding:15px;
+    padding:18px;
     margin-top:40px;
 }
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
 <div class="logo">
 <h1>Portfolio</h1>
 <p>Apitchaya Busuwa</p>
@@ -102,10 +147,13 @@ footer{
 <a href="portfolio.html">ผลงาน</a>
 <a href="contact.html">ติดต่อ</a>
 </nav>
+
 </header>
 
 <div class="container">
+
 <div class="contact-card">
+
 <h2>📞 ติดต่อฉัน</h2>
 
 <div class="contact-box">
@@ -134,10 +182,13 @@ footer{
 </div>
 
 </div>
+
 </div>
 
 <footer>
+
 © 2026 Apitchaya Busuwa Portfolio
+
 </footer>
 
 </body>
