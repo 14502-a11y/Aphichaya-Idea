@@ -68,45 +68,6 @@ transform:translateY(110vh) rotate(360deg);
 
 }
 
-/* ===== Snow ===== */
-
-.snow{
-
-position:fixed;
-
-top:-20px;
-
-background:white;
-
-border-radius:50%;
-
-opacity:.9;
-
-animation:snow linear infinite;
-
-pointer-events:none;
-
-}
-
-.n1{left:8%;width:8px;height:8px;animation-duration:8s;}
-.n2{left:22%;width:10px;height:10px;animation-duration:10s;}
-.n3{left:38%;width:6px;height:6px;animation-duration:9s;}
-.n4{left:54%;width:12px;height:12px;animation-duration:11s;}
-.n5{left:70%;width:8px;height:8px;animation-duration:10s;}
-.n6{left:85%;width:6px;height:6px;animation-duration:9s;}
-
-@keyframes snow{
-
-0%{
-transform:translateY(-20px);
-}
-
-100%{
-transform:translateY(110vh);
-}
-
-}
-
 /* ===== Menu ===== */
 
 nav{
@@ -125,13 +86,15 @@ text-align:center;
 
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 
+z-index: 1000;
+
 }
 
 nav a{
 
 text-decoration:none;
 
-margin:0 18px;
+margin:0 12px;
 
 font-size:18px;
 
@@ -140,6 +103,8 @@ font-weight:600;
 color:#ff4f94;
 
 transition:.3s;
+
+display: inline-block;
 
 }
 
@@ -186,7 +151,7 @@ gap:50px;
 box-shadow:0 20px 40px rgba(255,105,180,.18);
 
 }
-    .card img{
+.card img{
 
 width:300px;
 
@@ -284,6 +249,144 @@ box-shadow:0 15px 30px rgba(255,105,180,.35);
 
 }
 
+/* ===== Certificates Section ===== */
+
+.certificates-section {
+
+max-width: 1050px;
+
+margin: 0 auto 80px auto;
+
+padding: 0 30px;
+
+}
+
+.section-title {
+
+text-align: center;
+
+font-size: 36px;
+
+color: #ff4f94;
+
+margin-bottom: 40px;
+
+position: relative;
+
+}
+
+.section-title::after {
+
+content: '';
+
+display: block;
+
+width: 80px;
+
+height: 4px;
+
+background: #ff9ac5;
+
+margin: 10px auto 0 auto;
+
+border-radius: 2px;
+
+}
+
+.cert-grid {
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+gap: 30px;
+
+}
+
+.cert-card {
+
+background: white;
+
+border-radius: 20px;
+
+overflow: hidden;
+
+box-shadow: 0 10px 25px rgba(255,105,180,.12);
+
+transition: .3s;
+
+border: 2px solid #FFE4F2;
+
+}
+
+.cert-card:hover {
+
+transform: translateY(-8px);
+
+box-shadow: 0 15px 30px rgba(255,105,180,.22);
+
+border-color: #ff9ac5;
+
+}
+
+.cert-img-box {
+
+width: 100%;
+
+height: 220px;
+
+background: #FFF6FB;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+overflow: hidden;
+
+border-bottom: 1px solid #FFE4F2;
+
+}
+
+.cert-img-box img {
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+}
+
+.cert-info {
+
+padding: 20px;
+
+text-align: center;
+
+}
+
+.cert-info h4 {
+
+font-size: 18px;
+
+color: #ff4f94;
+
+margin-bottom: 8px;
+
+}
+
+.cert-info p {
+
+font-size: 15px;
+
+color: #777;
+
+}
+
+/* ===== Footer ===== */
+
 footer{
 
 background:#ff9cc4;
@@ -294,11 +397,17 @@ text-align:center;
 
 color:white;
 
-margin-top:50px;
-
 }
 
 @media(max-width:900px){
+
+nav a{
+
+margin:5px 8px;
+
+font-size:16px;
+
+}
 
 .card{
 
@@ -324,13 +433,17 @@ line-height:50px;
 
 }
 
+.section-title {
+
+font-size: 28px;
+
+}
+
 }
 
 </style>
 </head>
 <body>
-
-<!-- 🌸 Sakura -->
 
 <span class="sakura s1">🌸</span>
 <span class="sakura s2">🌸</span>
@@ -340,32 +453,23 @@ line-height:50px;
 <span class="sakura s6">🌸</span>
 <span class="sakura s7">🌸</span>
 
-<!-- ❄ Snow -->
-
-<div class="snow n1"></div>
-<div class="snow n2"></div>
-<div class="snow n3"></div>
-<div class="snow n4"></div>
-<div class="snow n5"></div>
-<div class="snow n6"></div>
-
-<!-- Menu -->
-
 <nav>
 
-<a href="index.html">🏠 Home</a>
+<a href="#home">🏠 Home</a>
 
-<a href="about.html">👤 About</a>
+<a href="#about">👤 About</a>
 
-<a href="education.html">🎓 Education</a>
+<a href="#education">🎓 Education</a>
 
-<a href="award.html">🏆 Awards</a>
+<a href="#certificates">📜 Certificates</a>
 
-<a href="contact.html">📞 Contact</a>
+<a href="#award">🏆 Awards</a>
+
+<a href="#contact">📞 Contact</a>
 
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="card">
 
@@ -393,11 +497,75 @@ BUSUWA
 
 </p>
 
-<a href="about.html" class="button">
+<a href="#certificates" class="button">
 
-ENTER PORTFOLIO
+VIEW CERTIFICATES
 
 </a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="certificates-section" id="certificates">
+
+<h2 class="section-title">📜 CERTIFICATES</h2>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+
+<div class="cert-img-box">
+
+<img src="images/cert1.jpg" alt="Certificate 1">
+
+</div>
+
+<div class="cert-info">
+
+<h4>ชื่อเกียรติบัตรใบที่ 1</h4>
+
+<p>คำอธิบายสั้นๆ หรือหน่วยงานที่มอบให้</p>
+
+</div>
+
+</div>
+
+<div class="cert-card">
+
+<div class="cert-img-box">
+
+<img src="images/cert2.jpg" alt="Certificate 2">
+
+</div>
+
+<div class="cert-info">
+
+<h4>ชื่อเกียรติบัตรใบที่ 2</h4>
+
+<p>คำอธิบายสั้นๆ หรือหน่วยงานที่มอบให้</p>
+
+</div>
+
+</div>
+
+<div class="cert-card">
+
+<div class="cert-img-box">
+
+<img src="images/cert3.jpg" alt="Certificate 3">
+
+</div>
+
+<div class="cert-info">
+
+<h4>ชื่อเกียรติบัตรใบที่ 3</h4>
+
+<p>คำอธิบายสั้นๆ หรือหน่วยงานที่มอบให้</p>
+
+</div>
 
 </div>
 
