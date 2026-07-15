@@ -1,76 +1,416 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FFF0F5; /* สีชมพูอ่อน LavenderBlush */
-            color: #4A4A4A;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .profile-card {
-            background-color: #FFFFFF;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4); /* เงาสีชมพูจางๆ */
-            width: 350px;
-            text-align: center;
-            border: 2px solid #FFB6C1; /* ขอบสีชมพู LightPink */
-        }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background-color: #FFC0CB; /* สีชมพู Pink */
-            margin: 0 auto 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-            color: #FFF;
-        }
-        h1 {
-            color: #FF69B4; /* หัวข้อสีชมพูเข้ม HotPink */
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        .nickname {
-            color: #FFB6C1; /* ชื่อเล่นสีชมพู LightPink */
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin: 10px 0;
-            text-align: left;
-        }
-        strong {
-            color: #FF69B4; /* เน้นข้อความด้วยสีชมพู */
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | Apichaya Busuwa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#FFE4F2,#FFF6FB,#FFEFF8);
+
+overflow-x:hidden;
+
+color:#555;
+
+}
+
+/* ===== Sakura ===== */
+
+.sakura{
+
+position:fixed;
+
+top:-10%;
+
+font-size:28px;
+
+opacity:.85;
+
+pointer-events:none;
+
+animation:fall linear infinite;
+
+z-index:999;
+
+}
+
+.s1{left:5%;animation-duration:8s;}
+.s2{left:18%;animation-duration:10s;}
+.s3{left:32%;animation-duration:7s;}
+.s4{left:48%;animation-duration:9s;}
+.s5{left:63%;animation-duration:11s;}
+.s6{left:80%;animation-duration:8s;}
+.s7{left:94%;animation-duration:10s;}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* ===== Snow ===== */
+
+.snow{
+
+position:fixed;
+
+top:-20px;
+
+background:white;
+
+border-radius:50%;
+
+opacity:.9;
+
+animation:snow linear infinite;
+
+pointer-events:none;
+
+}
+
+.n1{left:8%;width:8px;height:8px;animation-duration:8s;}
+.n2{left:22%;width:10px;height:10px;animation-duration:10s;}
+.n3{left:38%;width:6px;height:6px;animation-duration:9s;}
+.n4{left:54%;width:12px;height:12px;animation-duration:11s;}
+.n5{left:70%;width:8px;height:8px;animation-duration:10s;}
+.n6{left:85%;width:6px;height:6px;animation-duration:9s;}
+
+@keyframes snow{
+
+0%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(110vh);
+}
+
+}
+
+/* ===== Menu ===== */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+background:rgba(255,255,255,.9);
+
+backdrop-filter:blur(10px);
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+text-decoration:none;
+
+margin:0 18px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#ff4f94;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#ff1d75;
+
+}
+
+/* ===== Hero ===== */
+
+.hero{
+
+min-height:90vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+}
+
+.card{
+
+background:white;
+
+width:100%;
+
+max-width:1050px;
+
+border-radius:40px;
+
+padding:60px;
+
+display:flex;
+
+align-items:center;
+
+gap:50px;
+
+box-shadow:0 20px 40px rgba(255,105,180,.18);
+
+}
+    .card img{
+
+width:300px;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid #FFD6E8;
+
+box-shadow:0 15px 35px rgba(255,105,180,.25);
+
+transition:.4s;
+
+}
+
+.card img:hover{
+
+transform:scale(1.05);
+
+}
+
+.text{
+
+flex:1;
+
+}
+
+.text h3{
+
+font-size:22px;
+
+letter-spacing:5px;
+
+color:#ff8dbb;
+
+margin-bottom:15px;
+
+}
+
+.text h1{
+
+font-size:58px;
+
+color:#ff4f94;
+
+line-height:70px;
+
+margin-bottom:20px;
+
+}
+
+.text p{
+
+font-size:20px;
+
+line-height:36px;
+
+color:#666;
+
+margin-bottom:35px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:18px 45px;
+
+background:linear-gradient(90deg,#ff9ac5,#ff4f94);
+
+color:white;
+
+text-decoration:none;
+
+font-size:20px;
+
+font-weight:600;
+
+border-radius:50px;
+
+transition:.35s;
+
+box-shadow:0 10px 20px rgba(255,105,180,.25);
+
+}
+
+.button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 30px rgba(255,105,180,.35);
+
+}
+
+footer{
+
+background:#ff9cc4;
+
+padding:25px;
+
+text-align:center;
+
+color:white;
+
+margin-top:50px;
+
+}
+
+@media(max-width:900px){
+
+.card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.card img{
+
+width:220px;
+
+height:220px;
+
+}
+
+.text h1{
+
+font-size:42px;
+
+line-height:50px;
+
+}
+
+}
+
+</style>
 </head>
 <body>
 
-    <div class="profile-card">
-        <!-- ส่วนรูปภาพ (สามารถเปลี่ยน src เป็นลิงก์รูปของคุณได้ในโฟลเดอร์ images) -->
-        <div class="avatar">รูปภาพของคุณ</div>
-        
-        <h1>ชื่อ-นามสกุลของคุณ</h1>
-        <div class="nickname">(ชื่อเล่นของคุณ)</div>
-        
-        <p><strong>การศึกษา</strong>: มหาวิทยาลัย / โรงเรียนของคุณ</p>
-        <p><strong>ความสามารถ</strong>: ทักษะหรือสิ่งที่คุณถนัด</p>
-        <p><strong>งานอดิเรก</strong>: สิ่งที่ชอบทำในเวลาว่าง</p>
-        <p><strong>คติประจำใจ</strong>: ข้อคิดเตือนใจของคุณ</p>
-    </div>
+<!-- 🌸 Sakura -->
+
+<span class="sakura s1">🌸</span>
+<span class="sakura s2">🌸</span>
+<span class="sakura s3">🌸</span>
+<span class="sakura s4">🌸</span>
+<span class="sakura s5">🌸</span>
+<span class="sakura s6">🌸</span>
+<span class="sakura s7">🌸</span>
+
+<!-- ❄ Snow -->
+
+<div class="snow n1"></div>
+<div class="snow n2"></div>
+<div class="snow n3"></div>
+<div class="snow n4"></div>
+<div class="snow n5"></div>
+<div class="snow n6"></div>
+
+<!-- Menu -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="about.html">👤 About</a>
+
+<a href="education.html">🎓 Education</a>
+
+<a href="award.html">🏆 Awards</a>
+
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="card">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<div class="text">
+
+<h3>WELCOME TO MY PORTFOLIO</h3>
+
+<h1>
+
+APICHAYA<br>
+
+BUSUWA
+
+</h1>
+
+<p>
+
+สวัสดีค่ะ ดิฉัน <b>อภิชญา บุสุวะ</b><br>
+
+นักเรียนโรงเรียนพานทอง<br>
+
+แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์
+
+</p>
+
+<a href="about.html" class="button">
+
+ENTER PORTFOLIO
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+💗 Portfolio | APICHAYA BUSUWA 💗
+
+</footer>
 
 </body>
+
 </html>
