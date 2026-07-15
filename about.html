@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Me</title>
+<title>About Me | Apichaya Busuwa</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -41,6 +41,8 @@ animation:fall linear infinite;
 pointer-events:none;
 
 opacity:.8;
+
+z-index: 999;
 
 }
 
@@ -82,6 +84,8 @@ backdrop-filter:blur(10px);
 
 box-shadow:0 5px 15px rgba(0,0,0,.08);
 
+z-index: 1000;
+
 }
 
 nav a{
@@ -95,6 +99,10 @@ color:#ff4f94;
 font-size:18px;
 
 font-weight:600;
+
+transition: .3s;
+
+display: inline-block;
 
 }
 
@@ -112,7 +120,7 @@ max-width:1000px;
 
 margin:60px auto;
 
-padding:20px;
+padding: 0 20px;
 
 }
 
@@ -155,198 +163,3 @@ box-shadow:0 10px 30px rgba(255,105,180,.25);
 transition:.4s;
 
 }
-
-.profile img:hover{
-
-transform:scale(1.05);
-
-}
-
-.profile h1{
-
-margin-top:20px;
-
-font-size:45px;
-
-color:#ff4f94;
-
-}
-
-.profile p{
-
-font-size:20px;
-
-color:#777;
-
-}
-
-/* รายละเอียด */
-
-.info{
-
-margin-top:30px;
-
-display:grid;
-
-gap:18px;
-
-}
-
-.item{
-
-background:#FFF5FA;
-
-padding:18px 25px;
-
-border-radius:18px;
-
-font-size:19px;
-
-box-shadow:0 5px 12px rgba(255,105,180,.08);
-
-}
-
-.item b{
-
-color:#ff4f94;
-
-}
-
-/* ปุ่ม */
-
-.button{
-
-display:block;
-
-width:220px;
-
-margin:40px auto 0;
-
-padding:16px;
-
-text-align:center;
-
-background:#ff4f94;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:40px;
-
-font-size:18px;
-
-font-weight:600;
-
-transition:.3s;
-
-}
-
-.button:hover{
-
-background:#ff2d7a;
-
-transform:translateY(-5px);
-
-}
-
-footer{
-
-margin-top:60px;
-
-padding:20px;
-
-background:#ff9cc4;
-
-text-align:center;
-
-color:white;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<span class="flower f1">🌸</span>
-<span class="flower f2">🌸</span>
-<span class="flower f3">🌸</span>
-<span class="flower f4">🌸</span>
-<span class="flower f5">🌸</span>
-<span class="flower f6">🌸</span>
-<span class="flower f7">🌸</span>
-
-<nav>
-
-<a href="index.html">🏠 Home</a>
-<a href="about.html">👤 About</a>
-<a href="education.html">🎓 Education</a>
-<a href="award.html">🏆 Awards</a>
-<a href="contact.html">📞 Contact</a>
-
-</nav>
-
-<div class="container">
-
-<div class="card">
-
-<div class="profile">
-
-<img src="images/IMG_4142.jpeg" alt="Profile">
-
-<h1>About Me</h1>
-
-<p>ประวัติส่วนตัว</p>
-
-</div>
-
-<div class="info">
-
-<div class="item">
-<b>👤 ชื่อ :</b> อภิชญา บุสุวะ
-</div>
-
-<div class="item">
-<b>😊 ชื่อเล่น :</b> ไอเดีย
-</div>
-
-<div class="item">
-<b>🎂 วันเกิด :</b> 7 มิถุนายน 2552
-</div>
-
-<div class="item">
-<b>🎈 อายุ :</b> 17 ปี
-</div>
-
-<div class="item">
-<b>🏫 โรงเรียน :</b> โรงเรียนพานทอง
-</div>
-
-<div class="item">
-<b>📚 แผนการเรียน :</b> วิทยาศาสตร์ - คณิตศาสตร์
-</div>
-
-<div class="item">
-<b>💖 คติประจำใจ :</b> ความพยายามไม่เคยทรยศใคร
-</div>
-
-</div>
-
-<a href="education.html" class="button">
-Next → Education
-</a>
-
-</div>
-
-</div>
-
-<footer>
-
-💗 Thank You For Visiting My Portfolio 💗
-
-</footer>
-
-</body>
-</html>
