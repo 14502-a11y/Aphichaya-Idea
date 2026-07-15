@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ประวัติส่วนตัว | Apichaya Busuwa</title>
+<title>ประวัติส่วนตัว | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-/* ===========================
+/* ==========================
    Reset CSS
-=========================== */
+========================== */
 *{
     margin:0;
     padding:0;
@@ -21,22 +20,22 @@
     font-family:'Kanit',sans-serif;
 }
 
-/* ===========================
+/* ==========================
    Body
-=========================== */
+========================== */
 body{
     background:#FFE4F1;
     color:#555;
 }
 
-/* ===========================
+/* ==========================
    Header
-=========================== */
+========================== */
 header{
-    background:#FF7EB6;
+    background:linear-gradient(135deg,#FF69B4,#FFB6D9);
     color:white;
     text-align:center;
-    padding:40px 20px;
+    padding:35px;
 }
 
 header h1{
@@ -44,68 +43,55 @@ header h1{
 }
 
 header p{
-    font-size:18px;
     margin-top:10px;
+    font-size:18px;
 }
 
-/* ===========================
+/* ==========================
    Navigation
-=========================== */
+========================== */
 nav{
     background:white;
-    padding:15px;
     text-align:center;
+    padding:15px;
     box-shadow:0 3px 10px rgba(0,0,0,.1);
-    position:sticky;
-    top:0;
 }
 
 nav a{
     text-decoration:none;
     color:#FF4F94;
-    font-weight:600;
-    margin:0 18px;
+    font-weight:bold;
+    margin:0 15px;
 }
 
 nav a:hover{
-    color:#FF006E;
+    color:#E91E63;
 }
 
-/* ===========================
+/* ==========================
    Main
-=========================== */
+========================== */
 main{
     width:90%;
-    max-width:1000px;
+    max-width:900px;
     margin:40px auto;
 }
 
-/* ===========================
-   Section
-=========================== */
-section{
+/* ==========================
+   Profile Card
+========================== */
+.profile-card{
     background:white;
-    padding:30px;
-    margin-bottom:30px;
     border-radius:20px;
+    padding:35px;
+    text-align:center;
     box-shadow:0 8px 20px rgba(255,105,180,.20);
 }
 
-section h2{
-    color:#FF4F94;
-    border-left:6px solid #FF7EB6;
-    padding-left:12px;
-    margin-bottom:20px;
-}
-
-/* ===========================
-   Profile
-=========================== */
-.profile{
-    text-align:center;
-}
-
-.profile img{
+/* ==========================
+   Profile Image
+========================== */
+.profile-card img{
     width:220px;
     height:220px;
     border-radius:50%;
@@ -114,33 +100,34 @@ section h2{
     margin-bottom:20px;
 }
 
-/* ===========================
-   Article
-=========================== */
-article{
+/* ==========================
+   Heading
+========================== */
+.profile-card h2{
+    color:#E91E63;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   Information
+========================== */
+.info{
+    text-align:left;
+    max-width:500px;
+    margin:auto;
     line-height:2;
     font-size:18px;
 }
 
-/* ===========================
-   List
-=========================== */
-ul{
-    padding-left:20px;
-}
-
-li{
-    margin-bottom:10px;
-}
-
-/* ===========================
+/* ==========================
    Footer
-=========================== */
+========================== */
 footer{
-    background:#FF7EB6;
+    background:#FF69B4;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:18px;
+    margin-top:40px;
 }
 
 </style>
@@ -151,88 +138,58 @@ footer{
 
 <header>
 <h1>Portfolio</h1>
-<p>แฟ้มสะสมผลงาน | Apichaya Busuwa</p>
+<p>แฟ้มสะสมผลงาน</p>
 </header>
 
 <nav>
-<a href="#about">ประวัติส่วนตัว</a>
-<a href="#education">การศึกษา</a>
-<a href="#skills">ทักษะ</a>
-<a href="#contact">ติดต่อ</a>
+<a href="index.html">หน้าหลัก</a>
+<a href="profile.html">ประวัติส่วนตัว</a>
+<a href="education.html">การศึกษา</a>
+<a href="portfolio.html">ผลงาน</a>
+<a href="contact.html">ติดต่อ</a>
 </nav>
 
 <main>
 
-<section id="about">
-
-<div class="profile">
+<div class="profile-card">
 
 <img src="profile.jpg" alt="รูปโปรไฟล์">
 
-<h2>อภิชญา บุสุวะ</h2>
+<h2>ประวัติส่วนตัว</h2>
 
-<p>นักเรียนที่มีความสนใจด้านเทคโนโลยีสารสนเทศ และการพัฒนาเว็บไซต์</p>
+<div class="info">
+
+<p><strong>ชื่อ - นามสกุล :</strong> อภิชญา บุสุวะ</p>
+
+<p><strong>ชื่อเล่น :</strong> ไอเดีย</p>
+
+<p><strong>วันเกิด :</strong> 7 มิถุนายน 2552</p>
+
+<p><strong>อายุ :</strong> 17 ปี</p>
+
+<p><strong>สัญชาติ :</strong> ไทย</p>
+
+<p><strong>ศาสนา :</strong> พุทธ</p>
+
+<p><strong>ที่อยู่ :</strong> จังหวัดอุบลราชธานี</p>
+
+<p><strong>ความสามารถพิเศษ :</strong> เต้น ร้องเพลง เล่นดนตรี</p>
+
+<p><strong>งานอดิเรก :</strong> ฟังเพลง ดูหนัง และออกกำลังกาย</p>
+
+<p><strong>คติประจำใจ :</strong> ทำวันนี้ให้ดีที่สุด</p>
 
 </div>
 
-</section>
-
-<section id="education">
-
-<h2>ประวัติการศึกษา</h2>
-
-<article>
-
-<ul>
-<li>ระดับประถมศึกษา : ...................................</li>
-<li>ระดับมัธยมศึกษาตอนต้น : ...................................</li>
-<li>ระดับมัธยมศึกษาตอนปลาย : ...................................</li>
-</ul>
-
-</article>
-
-</section>
-
-<section id="skills">
-
-<h2>ทักษะ</h2>
-
-<article>
-
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript เบื้องต้น</li>
-<li>Microsoft Office</li>
-<li>Canva</li>
-</ul>
-
-</article>
-
-</section>
-
-<section id="contact">
-
-<h2>ข้อมูลติดต่อ</h2>
-
-<article>
-
-<p>📞 โทร : 092-776-4275</p>
-<p>📧 Email : apichayabusuwa@gmail.com</p>
-<p>📍 จังหวัด : อุบลราชธานี</p>
-
-</article>
-
-</section>
+</div>
 
 </main>
 
 <footer>
 
-<p>© 2026 Portfolio | Apichaya Busuwa</p>
+© 2026 Portfolio | Apichaya Busuwa
 
 </footer>
 
 </body>
-
 </html>
