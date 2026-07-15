@@ -1,76 +1,352 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #FFF0F5; /* สีชมพูอ่อน LavenderBlush */
-            color: #4A4A4A;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .profile-card {
-            background-color: #FFFFFF;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4); /* เงาสีชมพูจางๆ */
-            width: 350px;
-            text-align: center;
-            border: 2px solid #FFB6C1; /* ขอบสีชมพู LightPink */
-        }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background-color: #FFC0CB; /* สีชมพู Pink */
-            margin: 0 auto 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-            color: #FFF;
-        }
-        h1 {
-            color: #FF69B4; /* หัวข้อสีชมพูเข้ม HotPink */
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        .nickname {
-            color: #FFB6C1; /* ชื่อเล่นสีชมพู LightPink */
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin: 10px 0;
-            text-align: left;
-        }
-        strong {
-            color: #FF69B4; /* เน้นข้อความด้วยสีชมพู */
-        }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#FFE6F2,#FFF5FA,#FFEFF7);
+
+overflow-x:hidden;
+
+color:#555;
+
+}
+
+/* ดอกไม้ */
+
+.flower{
+
+position:fixed;
+
+font-size:28px;
+
+animation:fall linear infinite;
+
+pointer-events:none;
+
+opacity:.8;
+
+}
+
+.f1{left:5%;animation-duration:8s;}
+.f2{left:20%;animation-duration:10s;}
+.f3{left:35%;animation-duration:7s;}
+.f4{left:50%;animation-duration:9s;}
+.f5{left:65%;animation-duration:11s;}
+.f6{left:80%;animation-duration:8s;}
+.f7{left:95%;animation-duration:10s;}
+
+@keyframes fall{
+
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
+
+}
+
+/* เมนู */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+background:rgba(255,255,255,.9);
+
+padding:18px;
+
+text-align:center;
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+nav a{
+
+text-decoration:none;
+
+margin:0 18px;
+
+color:#ff4f94;
+
+font-size:18px;
+
+font-weight:600;
+
+}
+
+nav a:hover{
+
+color:#ff2d7a;
+
+}
+
+/* กล่องหลัก */
+
+.container{
+
+max-width:1000px;
+
+margin:60px auto;
+
+padding:20px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:35px;
+
+padding:50px;
+
+box-shadow:0 15px 35px rgba(255,105,180,.18);
+
+}
+
+/* รูป */
+
+.profile{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.profile img{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:8px solid #FFD6E8;
+
+box-shadow:0 10px 30px rgba(255,105,180,.25);
+
+transition:.4s;
+
+}
+
+.profile img:hover{
+
+transform:scale(1.05);
+
+}
+
+.profile h1{
+
+margin-top:20px;
+
+font-size:45px;
+
+color:#ff4f94;
+
+}
+
+.profile p{
+
+font-size:20px;
+
+color:#777;
+
+}
+
+/* รายละเอียด */
+
+.info{
+
+margin-top:30px;
+
+display:grid;
+
+gap:18px;
+
+}
+
+.item{
+
+background:#FFF5FA;
+
+padding:18px 25px;
+
+border-radius:18px;
+
+font-size:19px;
+
+box-shadow:0 5px 12px rgba(255,105,180,.08);
+
+}
+
+.item b{
+
+color:#ff4f94;
+
+}
+
+/* ปุ่ม */
+
+.button{
+
+display:block;
+
+width:220px;
+
+margin:40px auto 0;
+
+padding:16px;
+
+text-align:center;
+
+background:#ff4f94;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.button:hover{
+
+background:#ff2d7a;
+
+transform:translateY(-5px);
+
+}
+
+footer{
+
+margin-top:60px;
+
+padding:20px;
+
+background:#ff9cc4;
+
+text-align:center;
+
+color:white;
+
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <div class="profile-card">
-        <!-- ส่วนรูปภาพ (สามารถเปลี่ยน src เป็นลิงก์รูปของคุณได้ในโฟลเดอร์ images) -->
-        <div class="avatar">รูปภาพของคุณ</div>
-        
-        <h1>ชื่อ-นามสกุลของคุณ</h1>
-        <div class="nickname">(ชื่อเล่นของคุณ)</div>
-        
-        <p><strong>การศึกษา</strong>: มหาวิทยาลัย / โรงเรียนของคุณ</p>
-        <p><strong>ความสามารถ</strong>: ทักษะหรือสิ่งที่คุณถนัด</p>
-        <p><strong>งานอดิเรก</strong>: สิ่งที่ชอบทำในเวลาว่าง</p>
-        <p><strong>คติประจำใจ</strong>: ข้อคิดเตือนใจของคุณ</p>
-    </div>
+<span class="flower f1">🌸</span>
+<span class="flower f2">🌸</span>
+<span class="flower f3">🌸</span>
+<span class="flower f4">🌸</span>
+<span class="flower f5">🌸</span>
+<span class="flower f6">🌸</span>
+<span class="flower f7">🌸</span>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+<a href="about.html">👤 About</a>
+<a href="education.html">🎓 Education</a>
+<a href="award.html">🏆 Awards</a>
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<div class="profile">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<h1>About Me</h1>
+
+<p>ประวัติส่วนตัว</p>
+
+</div>
+
+<div class="info">
+
+<div class="item">
+<b>👤 ชื่อ :</b> อภิชญา บุสุวะ
+</div>
+
+<div class="item">
+<b>😊 ชื่อเล่น :</b> ไอเดีย
+</div>
+
+<div class="item">
+<b>🎂 วันเกิด :</b> 7 มิถุนายน 2552
+</div>
+
+<div class="item">
+<b>🎈 อายุ :</b> 17 ปี
+</div>
+
+<div class="item">
+<b>🏫 โรงเรียน :</b> โรงเรียนพานทอง
+</div>
+
+<div class="item">
+<b>📚 แผนการเรียน :</b> วิทยาศาสตร์ - คณิตศาสตร์
+</div>
+
+<div class="item">
+<b>💖 คติประจำใจ :</b> ความพยายามไม่เคยทรยศใคร
+</div>
+
+</div>
+
+<a href="education.html" class="button">
+Next → Education
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+💗 Thank You For Visiting My Portfolio 💗
+
+</footer>
 
 </body>
 </html>
