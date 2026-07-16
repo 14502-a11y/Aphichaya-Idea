@@ -10,7 +10,6 @@
 
 <style>
 
-/* ===== Reset ===== */
 *{
     margin:0;
     padding:0;
@@ -18,22 +17,20 @@
     font-family:'Kanit',sans-serif;
 }
 
-/* ===== Body ===== */
 body{
     background:linear-gradient(135deg,#FFE6F2,#FFF7FB,#FFEAF4);
     color:#555;
 }
 
-/* ===== Header ===== */
 header{
     background:linear-gradient(135deg,#FF69B4,#FF9ACD);
-    color:white;
+    color:#fff;
     text-align:center;
     padding:50px 20px;
 }
 
 header h1{
-    font-size:50px;
+    font-size:48px;
 }
 
 header p{
@@ -41,9 +38,8 @@ header p{
     margin-top:10px;
 }
 
-/* ===== Menu ===== */
 nav{
-    background:white;
+    background:#fff;
     text-align:center;
     padding:18px;
     position:sticky;
@@ -52,8 +48,8 @@ nav{
 }
 
 nav a{
-    text-decoration:none;
     color:#FF4F94;
+    text-decoration:none;
     margin:0 15px;
     font-weight:bold;
 }
@@ -62,7 +58,6 @@ nav a:hover{
     color:#E91E63;
 }
 
-/* ===== Section ===== */
 section{
     width:90%;
     max-width:1000px;
@@ -70,10 +65,10 @@ section{
 }
 
 .card{
-    background:white;
+    background:#fff;
     border-radius:20px;
     padding:30px;
-    box-shadow:0 8px 20px rgba(255,105,180,.20);
+    box-shadow:0 8px 20px rgba(255,105,180,.15);
 }
 
 .title{
@@ -83,7 +78,8 @@ section{
     font-size:35px;
 }
 
-/* ===== Home ===== */
+/* Profile */
+
 .profile{
     text-align:center;
 }
@@ -99,14 +95,35 @@ section{
 
 .profile h2{
     color:#FF4F94;
+    margin-bottom:10px;
 }
 
 .profile p{
-    margin-top:10px;
     line-height:1.8;
 }
 
-/* ===== Education ===== */
+/* About */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.about-card{
+    background:#FFF0F5;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+}
+
+.about-card h3{
+    color:#E91E63;
+    margin-bottom:10px;
+}
+
+/* Education */
+
 .box{
     background:#FFF0F5;
     border-left:6px solid #FF69B4;
@@ -117,10 +134,10 @@ section{
 
 .box h3{
     color:#E91E63;
-    margin-bottom:10px;
 }
 
-/* ===== Portfolio ===== */
+/* Portfolio */
+
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -149,20 +166,20 @@ section{
     padding:0 15px 20px;
 }
 
-/* ===== Contact ===== */
+/* Contact */
+
 .contact{
     text-align:center;
 }
 
 .contact p{
-    margin:15px 0;
+    margin:12px 0;
     font-size:18px;
 }
 
-/* ===== Footer ===== */
 footer{
     background:#FF69B4;
-    color:white;
+    color:#fff;
     text-align:center;
     padding:20px;
     margin-top:40px;
@@ -171,90 +188,101 @@ footer{
 </style>
 
 </head>
-
 <body>
 
 <header>
-<h1>Portfolio</h1>
-<p>Apichaya Busuwa</p>
+    <h1>Portfolio</h1>
+    <p>Apichaya Busuwa</p>
 </header>
 
 <nav>
-<a href="#home">หน้าหลัก</a>
-<a href="#about">ประวัติ</a>
-<a href="#education">การศึกษา</a>
-<a href="#portfolio">ผลงาน</a>
-<a href="#contact">ติดต่อ</a>
+    <a href="#home">หน้าหลัก</a>
+    <a href="#about">ประวัติส่วนตัว</a>
+    <a href="#education">การศึกษา</a>
+    <a href="#portfolio">ผลงาน</a>
+    <a href="#contact">ติดต่อ</a>
 </nav>
 
+<!-- Home -->
+
 <section id="home">
-
 <div class="card profile">
 
-<img src="<section id="home">
-
-<div class="card profile">
-
-<img src="images/IMG_4142.jpeg" alt="รูปโปรไฟล์ Apichaya Busuwa">
+<img src="images/IMG_4142.jpeg" alt="รูปโปรไฟล์">
 
 <h2>อภิชญา บุสุวะ</h2>
 
-<p></p>
+<p>
+นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
+แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์
+</p>
 
 </div>
-
-</section>"images/profile file">
-
-<h2>อภิชญา บุสุวะ</h2>
-
-<p></p>
-
-</div>
-
 </section>
 
-<section id="about">
+<!-- About -->
 
+<section id="about">
 <div class="card">
 
 <h2 class="title">ประวัติส่วนตัว</h2>
 
-<p><strong>ชื่อเล่น :</strong> ไอเดีย</p>
-<p><strong>วันเกิด :</strong> 7 มิถุนายน 2552</p>
-<p><strong>ความสามารถพิเศษ :</strong> เต้น ร้องเพลง เล่นดนตรี</p>
+<div class="about-grid">
+
+<div class="about-card">
+<h3>ชื่อเล่น</h3>
+<p>ไอเดีย</p>
+</div>
+
+<div class="about-card">
+<h3>วันเกิด</h3>
+<p>7 มิถุนายน 2552</p>
+</div>
+
+<div class="about-card">
+<h3>ความสามารถพิเศษ</h3>
+<p>เต้น ร้องเพลง เล่นดนตรี</p>
+</div>
+
+<div class="about-card">
+<h3>งานอดิเรก</h3>
+<p>ฟังเพลง เล่นเกม</p>
+</div>
 
 </div>
 
+</div>
 </section>
 
-<section id="education">
+<!-- Education -->
 
+<section id="education">
 <div class="card">
 
 <h2 class="title">การศึกษา</h2>
 
 <div class="box">
-<h3>ประถมศึกษา</h3>
+<h3>ระดับประถมศึกษา</h3>
 <p>โรงเรียนเทศบาลตำบลแวงน้อย</p>
 </div>
 
 <div class="box">
-<h3>มัธยมศึกษาตอนต้น</h3>
+<h3>ระดับมัธยมศึกษาตอนต้น</h3>
 <p>โรงเรียนพานทอง</p>
 </div>
 
 <div class="box">
-<h3>มัธยมศึกษาตอนปลาย</h3>
+<h3>ระดับมัธยมศึกษาตอนปลาย</h3>
 <p>โรงเรียนพานทอง</p>
-<p>แผนการเรียน วิทยาศาสตร์ - คณิตศาสตร์</p>
+<p>แผนการเรียน วิทยาศาสตร์-คณิตศาสตร์</p>
 </div>
 
 </div>
-
 </section>
 
-<section id="portfolio">
+<!-- Portfolio -->
 
+<section id="portfolio">
 <div class="card">
 
 <h2 class="title">ผลงานและเกียรติบัตร</h2>
@@ -262,19 +290,19 @@ footer{
 <div class="gallery">
 
 <div class="item">
-<img src="images/3037 (4).png">
+<img src="images/3037 (4).png" alt="">
 <h4>เกียรติบัตรที่ 1</h4>
 <p>FOREIGN LANGUAGES DEPARTMENT</p>
 </div>
 
 <div class="item">
-<img src="images/3039.png">
+<img src="images/3039.png" alt="">
 <h4>เกียรติบัตรที่ 2</h4>
 <p>ดาวจรัสแสง ปีการศึกษา 2567</p>
 </div>
 
 <div class="item">
-<img src="images/3042.png">
+<img src="images/3042.png" alt="">
 <h4>เกียรติบัตรที่ 3</h4>
 <p>ดาวจรัสแสง ปีการศึกษา 2568</p>
 </div>
@@ -282,11 +310,11 @@ footer{
 </div>
 
 </div>
-
 </section>
 
-<section id="contact">
+<!-- Contact -->
 
+<section id="contact">
 <div class="card contact">
 
 <h2 class="title">ติดต่อ</h2>
@@ -297,45 +325,35 @@ footer{
 <p>📷 Instagram : @i.d.e.a.7.6.1.6</p>
 
 </div>
-
 </section>
 
 <footer>
-/* ===== About ===== */
-.about-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:20px;
-}
-
-.about-card{
-    background:#FFF0F5;
-    border-radius:18px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(255,105,180,.15);
-    transition:.3s;
-}
-
-.about-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(255,105,180,.25);
-}
-
-.about-card h3{
-    color:#E91E63;
-    margin-bottom:10px;
-    font-size:22px;
-}
-
-.about-card p{
-    color:#555;
-    font-size:17px;
-}
 © 2026 Portfolio | Apichaya Busuwa
-
 </footer>
 
 </body>
 </html>
+.profile img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #FFC0CB;
+    box-shadow:0 8px 25px rgba(255,105,180,.25);
+    margin-bottom:25px;
+}
+.profile{
+    text-align:center;
+    padding:20px;
+}
+
+.profile h2{
+    font-size:36px;
+    color:#FF4F94;
+    margin-top:10px;
+}
+
+.profile p{
+    font-size:20px;
+    line-height:1.8;
+}
