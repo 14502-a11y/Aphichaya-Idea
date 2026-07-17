@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>ติดต่อ | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 <style>
 
@@ -17,231 +20,402 @@
     font-family:'Kanit',sans-serif;
 }
 
+
 body{
+
     background:linear-gradient(135deg,#fff3e0,#ffcc80,#ffffff);
+
 }
 
 
+
 /* เมนู */
+
 header{
+
     background:#f58220;
     padding:18px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+
 }
 
+
 .logo{
+
     color:white;
     font-size:28px;
     font-weight:bold;
+
 }
+
 
 nav ul{
+
     display:flex;
     list-style:none;
+
 }
+
 
 nav ul li{
+
     margin-left:20px;
+
 }
+
 
 nav ul li a{
+
     color:white;
     text-decoration:none;
+
 }
+
 
 nav ul li a:hover{
+
     color:#ffe0b2;
+
 }
 
 
-/* เนื้อหา */
+
+/* กล่องหลัก */
+
 .container{
-    max-width:1100px;
+
+    max-width:1000px;
     margin:40px auto;
     background:white;
     border-radius:25px;
     padding:40px;
     box-shadow:0 10px 30px rgba(245,130,32,.25);
+
 }
+
 
 
 .title{
+
     text-align:center;
     color:#e65100;
     font-size:36px;
-    margin-bottom:30px;
+    margin-bottom:10px;
+
 }
 
 
-/* ผลงาน */
-.portfolio-grid{
+.subtitle{
+
+    text-align:center;
+    color:#666;
+    margin-bottom:35px;
+
+}
+
+
+
+/* ติดต่อ */
+
+.contact-grid{
+
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
+
 }
 
 
-.project-card{
+
+.contact-box{
+
     background:#fff8f0;
+    border-left:8px solid #f58220;
+    padding:25px;
     border-radius:20px;
-    overflow:hidden;
-    border:3px solid #ffd180;
     transition:.3s;
+
 }
 
 
-.project-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(245,130,32,.3);
+
+.contact-box:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(245,130,32,.25);
+
 }
 
 
-.project-card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
 
+.contact-box h3{
 
-.project-content{
-    padding:20px;
-}
-
-
-.project-content h2{
     color:#e65100;
+    font-size:22px;
     margin-bottom:10px;
+
 }
 
 
-.project-content p{
+
+.contact-box p{
+
     color:#555;
-    line-height:1.7;
+    font-size:18px;
+
 }
+
 
 
 /* ปุ่ม */
-.page-nav{
+
+.button-box{
+
     display:flex;
     justify-content:space-between;
     margin-top:40px;
+
 }
 
 
-.page-nav a{
+
+.btn{
+
     background:#f58220;
     color:white;
     text-decoration:none;
     padding:12px 30px;
     border-radius:30px;
     transition:.3s;
+
 }
 
 
-.page-nav a:hover{
+
+.btn:hover{
+
     background:#e65100;
+
 }
+
+
+
+/* footer */
+
+footer{
+
+    text-align:center;
+    padding:20px;
+    color:white;
+    background:#f58220;
+
+}
+
 
 
 /* มือถือ */
+
 @media(max-width:768px){
 
+
 header{
+
     flex-direction:column;
+
 }
 
+
 nav ul{
+
     flex-wrap:wrap;
     justify-content:center;
     margin-top:10px;
+
 }
 
 
 .container{
+
     margin:20px;
     padding:25px;
+
 }
 
 
-.page-nav{
+.button-box{
+
     flex-direction:column;
     gap:15px;
+
 }
 
 
-.page-nav a{
+.btn{
+
     text-align:center;
+
 }
+
 
 }
 
 </style>
 
+
 </head>
+
+
 
 <body>
 
+
 <header>
 
-<div class="logo">My Portfolio</div>
+
+<div class="logo">
+My Portfolio
+</div>
+
 
 <nav>
+
 <ul>
+
 <li><a href="index.html">หน้าหลัก</a></li>
+
 <li><a href="about.html">ประวัติส่วนตัว</a></li>
+
 <li><a href="education.html">การศึกษา</a></li>
+
 <li><a href="portfolio.html">ผลงาน</a></li>
+
 <li><a href="certificate.html">เกียรติบัตร</a></li>
+
 <li><a href="contact.html">ติดต่อ</a></li>
+
 </ul>
+
 </nav>
+
 
 </header>
 
+
+
+
+
 <div class="container">
 
-<h1>ติดต่อ</h1>
+
+<h1 class="title">
+ติดต่อ
+</h1>
+
 
 <p class="subtitle">
 ขอบคุณที่เข้าชมแฟ้มสะสมผลงานของฉัน
 </p>
 
+
+
+
+<div class="contact-grid">
+
+
 <div class="contact-box">
+
 <h3>👤 ชื่อ</h3>
-<p>อภิชญา บุสุวะ</p>
+
+<p>
+อภิชญา บุสุวะ
+</p>
+
 </div>
 
+
+
+
 <div class="contact-box">
+
 <h3>📞 โทรศัพท์</h3>
-<p>0927764275</p>
+
+<p>
+092-776-4275
+</p>
+
 </div>
 
+
+
+
 <div class="contact-box">
+
 <h3>📧 อีเมล</h3>
-<p>apichayabusuwa@gmail.com</p>
+
+<p>
+apichayabusuwa@gmail.com
+</p>
+
 </div>
 
+
+
+
 <div class="contact-box">
+
 <h3>📘 Facebook</h3>
-<p>Apichaya Busuwa</p>
+
+<p>
+Apichaya Busuwa
+</p>
+
 </div>
 
+
+
+
 <div class="contact-box">
+
 <h3>📍 ที่อยู่</h3>
-<p>ประเทศไทย</p>
+
+<p>
+ประเทศไทย
+</p>
+
 </div>
+
+
+
+
+</div>
+
+
+
+
 
 <div class="button-box">
 
-<a href="certificate.html" class="btn">⬅ หน้าก่อน</a>
 
-<a href="index.html" class="btn">🏠 กลับหน้าหลัก</a>
+<a href="certificate.html" class="btn">
+⬅ หน้าก่อน
+</a>
+
+
+<a href="index.html" class="btn">
+🏠 กลับหน้าหลัก
+</a>
+
 
 </div>
 
+
+
 </div>
+
+
+
 
 <footer>
 
@@ -249,5 +423,8 @@ nav ul{
 
 </footer>
 
+
+
 </body>
+
 </html>
