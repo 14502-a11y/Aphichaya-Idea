@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>การศึกษา | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 
 <style>
 
@@ -57,123 +57,165 @@ nav ul li a:hover{
 }
 
 
-/* เนื้อหา */
+/* กล่องหลัก */
 .container{
-    max-width:1100px;
+
+    max-width:1000px;
     margin:40px auto;
     background:white;
     border-radius:25px;
     padding:40px;
     box-shadow:0 10px 30px rgba(245,130,32,.25);
+
 }
 
 
+/* หัวข้อ */
+
 .title{
+
     text-align:center;
     color:#e65100;
     font-size:36px;
-    margin-bottom:30px;
+    margin-bottom:35px;
+
 }
 
 
-/* ผลงาน */
-.portfolio-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+/* การศึกษา */
+
+.timeline{
+
+    display:flex;
+    flex-direction:column;
     gap:25px;
+
 }
 
 
-.project-card{
+.item{
+
     background:#fff8f0;
+    border-left:8px solid #f58220;
+    padding:25px;
     border-radius:20px;
-    overflow:hidden;
-    border:3px solid #ffd180;
     transition:.3s;
+
 }
 
 
-.project-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(245,130,32,.3);
+.item:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(245,130,32,.25);
+
 }
 
 
-.project-card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
+.item h2{
 
-
-.project-content{
-    padding:20px;
-}
-
-
-.project-content h2{
     color:#e65100;
+    font-size:24px;
     margin-bottom:10px;
+
 }
 
 
-.project-content p{
+.item h3{
+
+    color:#f58220;
+    font-size:18px;
+    margin-bottom:10px;
+
+}
+
+
+.item p{
+
     color:#555;
-    line-height:1.7;
+    font-size:18px;
+    line-height:1.8;
+
 }
 
 
 /* ปุ่ม */
+
 .page-nav{
+
     display:flex;
     justify-content:space-between;
     margin-top:40px;
+
 }
 
 
 .page-nav a{
+
     background:#f58220;
     color:white;
     text-decoration:none;
     padding:12px 30px;
     border-radius:30px;
     transition:.3s;
+
 }
 
 
 .page-nav a:hover{
+
     background:#e65100;
+
 }
 
 
 /* มือถือ */
+
 @media(max-width:768px){
 
 header{
+
     flex-direction:column;
+
 }
 
+
 nav ul{
+
     flex-wrap:wrap;
     justify-content:center;
     margin-top:10px;
+
 }
 
 
 .container{
+
     margin:20px;
     padding:25px;
+
+}
+
+
+.title{
+
+    font-size:30px;
+
 }
 
 
 .page-nav{
+
     flex-direction:column;
     gap:15px;
+
 }
 
 
 .page-nav a{
+
     text-align:center;
+
 }
 
 }
@@ -182,116 +224,111 @@ nav ul{
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<div class="logo">My Portfolio</div>
+<div class="logo">
+My Portfolio
+</div>
+
 
 <nav>
+
 <ul>
+
 <li><a href="index.html">หน้าหลัก</a></li>
 <li><a href="about.html">ประวัติส่วนตัว</a></li>
 <li><a href="education.html">การศึกษา</a></li>
 <li><a href="portfolio.html">ผลงาน</a></li>
 <li><a href="certificate.html">เกียรติบัตร</a></li>
 <li><a href="contact.html">ติดต่อ</a></li>
+
 </ul>
+
 </nav>
 
 </header>
 
+
+
 <div class="container">
 
-<h1>ประวัติการศึกษา</h1>
+
+<h1 class="title">
+ประวัติการศึกษา
+</h1>
+
+
 
 <div class="timeline">
 
+
 <div class="item">
+
 <h2>ระดับประถมศึกษา</h2>
+
 <h3>ปีการศึกษา 2558 - 2563</h3>
+
 <p>
 โรงเรียนเทศบาลตำบลแวงน้อย
 </p>
+
 </div>
+
+
 
 <div class="item">
-<h2
-<div class="timeline">
 
-    <div class="item">
-        <h2>ระดับประถมศึกษา</h2>
-        <h3>ปีการศึกษา 2558 - 2563</h3>
-        <p>
-            โรงเรียนเทศบาลตำบลแวงน้อย
-        </p>
-    </div>
+<h2>ระดับมัธยมศึกษาตอนต้น</h2>
 
-    <div class="item">
-        <h2>ระดับมัธยมศึกษาตอนต้น</h2>
-        <h3>ปีการศึกษา 2564 - 2567</h3>
-        <p>
-            โรงเรียนพานทอง
-        </p>
-    </div>
+<h3>ปีการศึกษา 2564 - 2566</h3>
 
-    <div class="item">
-        <h2>ระดับมัธยมศึกษาตอนปลาย</h2>
-        <h3>ปีการศึกษา 2568 - 2570</h3>
-        <p>
-            โรงเรียนพานทอง<br>
-            แผนการเรียน : วิทยาศาสตร์ - คณิตศาสตร์
-        </p>
-    </div>
-/* จัดขนาดตัวหนังสือการศึกษาให้เท่ากัน */
-
-.container h1{
-    text-align:center;
-    color:#e65100;
-    font-size:36px;
-    margin-bottom:30px;
-}
-
-
-.timeline{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
-}
-
-
-.item{
-    background:#fff8f0;
-    border-left:8px solid #f58220;
-    padding:25px;
-    border-radius:20px;
-}
-
-
-.item h2{
-    color:#e65100;
-    font-size:24px;
-    font-weight:600;
-    margin-bottom:10px;
-}
-
-
-.item h3{
-    color:#f58220;
-    font-size:18px;
-    font-weight:500;
-    margin-bottom:10px;
-}
-
-
-.item p{
-    color:#555;
-    font-size:18px;
-    line-height:1.8;
-}
+<p>
+โรงเรียนพานทอง
+</p>
 
 </div>
+
+
+
+
+<div class="item">
+
+<h2>ระดับมัธยมศึกษาตอนปลาย</h2>
+
+<h3>ปีการศึกษา 2567 - ปัจจุบัน</h3>
+
+<p>
+โรงเรียนพานทอง<br>
+แผนการเรียน : วิทยาศาสตร์ - คณิตศาสตร์
+</p>
+
+</div>
+
+
+</div>
+
+
+
 <div class="page-nav">
-    <a href="about.html">⬅ หน้าก่อน</a>
-    <a href="portfolio.html">หน้าถัดไป ➜</a>
+
+<a href="about.html">
+⬅ หน้าก่อน
+</a>
+
+
+<a href="portfolio.html">
+หน้าถัดไป ➜
+</a>
+
 </div>
+
+
+</div>
+
+
+</body>
+</html>
