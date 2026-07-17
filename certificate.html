@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,6 +10,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+
 <style>
 
 *{
@@ -17,196 +20,397 @@
     font-family:'Kanit',sans-serif;
 }
 
+
 body{
-    background:linear-gradient(135deg,#ffe4f2,#ffd6ea,#fff7fb);
+    background:linear-gradient(135deg,#fff3e0,#ffcc80,#ffffff);
 }
 
+
+/* เมนู */
+
 header{
-    background:#ff69b4;
+
+    background:#f58220;
     padding:18px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+
 }
+
 
 .logo{
-    color:#fff;
+
+    color:white;
     font-size:28px;
     font-weight:bold;
+
 }
+
 
 nav ul{
+
     display:flex;
     list-style:none;
+
 }
+
 
 nav ul li{
+
     margin-left:20px;
+
 }
+
 
 nav ul li a{
+
     color:white;
     text-decoration:none;
+
 }
+
 
 nav ul li a:hover{
-    color:#ffe4f2;
+
+    color:#ffe0b2;
+
 }
+
+
+
+/* เนื้อหา */
 
 .container{
+
+    width:90%;
     max-width:1100px;
     margin:40px auto;
-    padding:20px;
+
 }
 
-.container h1{
+
+
+.title{
+
     text-align:center;
-    color:#ff4f9f;
-    margin-bottom:15px;
+    color:#e65100;
+    font-size:36px;
+    margin-bottom:10px;
+
 }
 
-.container p{
+
+.subtitle{
+
     text-align:center;
     color:#666;
     margin-bottom:40px;
+
 }
 
-.gallery{
-    display:grid;
-    grid-template-columns:
-<!DOCTYPE html>
-<html lang="th">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Certificate | Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Kanit',sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#ffe4f2,#ffd6ec,#fff0f8);
-}
-
-header{
-    background:#ff66a3;
-    color:#fff;
-    text-align:center;
-    padding:25px;
-}
-
-header h1{
-    font-size:36px;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
-}
+/* เกียรติบัตร */
 
 .grid{
+
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
+
 }
+
+
 
 .card{
-    background:#fff;
+
+    background:white;
     border-radius:20px;
     overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    box-shadow:0 8px 20px rgba(245,130,32,.25);
     transition:.3s;
+
 }
+
 
 .card:hover{
+
     transform:translateY(-8px);
+
 }
 
+
+
 .card img{
+
     width:100%;
     height:220px;
     object-fit:cover;
+
 }
+
+
 
 .card-content{
+
     padding:20px;
+
 }
+
+
 
 .card-content h3{
-    color:#ff4f92;
+
+    color:#e65100;
+    font-size:22px;
     margin-bottom:10px;
+
 }
+
+
 
 .card-content p{
+
     color:#555;
-    font-size:15px;
+    font-size:16px;
+
 }
+
+
+
+/* ปุ่ม */
+
+.page-nav{
+
+    display:flex;
+    justify-content:space-between;
+    margin-top:40px;
+
+}
+
+
+
+.btn{
+
+    background:#f58220;
+    color:white;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:30px;
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:#e65100;
+
+}
+
+
+
+/* Footer */
 
 footer{
+
     margin-top:50px;
-    background:#ff66a3;
-    color:#fff;
+    background:#f58220;
+    color:white;
     text-align:center;
     padding:15px;
+
 }
+
+
+
+/* มือถือ */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+
+}
+
+
+nav ul{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:10px;
+
+}
+
+
+.page-nav{
+
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+.btn{
+
+    text-align:center;
+
+}
+
+}
+
 </style>
 
+
 </head>
+
+
 <body>
 
+
 <header>
-<h1>เกียรติบัตร (Certificates)</h1>
-<p>ผลงานและใบประกาศนียบัตร</p>
+
+<div class="logo">
+My Portfolio
+</div>
+
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">หน้าหลัก</a></li>
+
+<li><a href="about.html">ประวัติส่วนตัว</a></li>
+
+<li><a href="education.html">การศึกษา</a></li>
+
+<li><a href="portfolio.html">ผลงาน</a></li>
+
+<li><a href="certificate.html">เกียรติบัตร</a></li>
+
+<li><a href="contact.html">ติดต่อ</a></li>
+
+</ul>
+
+</nav>
+
 </header>
+
+
+
 
 <div class="container">
 
+
+<h1 class="title">
+เกียรติบัตร (Certificates)
+</h1>
+
+
+<p class="subtitle">
+รวบรวมใบประกาศนียบัตรและความสำเร็จที่ภาคภูมิใจ
+</p>
+
+
+
+
 <div class="grid">
 
+
+
 <div class="card">
+
 <img src="images/certificate1.jpg" alt="Certificate 1">
+
 <div class="card-content">
+
 <h3>เกียรติบัตรที่ 1</h3>
-<p>รายละเอียดของเกียรติบัตร</p>
-</div>
+
+<p>
+รายละเอียดของเกียรติบัตร
+</p>
+
 </div>
 
+</div>
+
+
+
+
 <div class="card">
+
 <img src="images/certificate2.jpg" alt="Certificate 2">
+
 <div class="card-content">
+
 <h3>เกียรติบัตรที่ 2</h3>
-<p>รายละเอียดของเกียรติบัตร</p>
+
+<p>
+รายละเอียดของเกียรติบัตร
+</p>
+
 </div>
+
 </div>
+
+
+
+
 
 <div class="card">
+
 <img src="images/certificate3.jpg" alt="Certificate 3">
+
 <div class="card-content">
+
 <h3>เกียรติบัตรที่ 3</h3>
-<p>รายละเอียดของเกียรติบัตร</p>
-</div>
-<!-- ปุ่มนำทาง -->
-<div class="next-page">
-    <a href="contact.html" class="btn-next">หน้าถัดไป ➜ ติดต่อ</a>
-</div>
-</div>
+
+<p>
+รายละเอียดของเกียรติบัตร
+</p>
 
 </div>
 
 </div>
+
+
+
+</div>
+
+
+
+
+<div class="page-nav">
+
+<a href="portfolio.html" class="btn">
+⬅ หน้าก่อน
+</a>
+
+
+<a href="contact.html" class="btn">
+หน้าถัดไป ➜ ติดต่อ
+</a>
+
+
+</div>
+
+
+</div>
+
+
 
 <footer>
-© 2026 Portfolio | Apichaya Busuwa
+
+© 2026 Portfolio | อภิชญา บุสุวะ
+
 </footer>
 
+
+
 </body>
+
 </html>
