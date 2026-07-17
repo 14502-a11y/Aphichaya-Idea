@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ผลงาน - Portfolio Apitchaya</title>
+
+<title>ผลงาน | Portfolio Apitchaya</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -13,15 +17,18 @@
 }
 
 body{
-    font-family:Tahoma,sans-serif;
-    background:#FFF8F0;
-    color:#8B4513;
+    font-family:'Kanit',sans-serif;
+    background:#FFF0F6;
+    color:#7A284F;
 }
 
+
+/* Header */
+
 header{
-    background:linear-gradient(135deg,#FF8C00,#FFA94D);
+    background:linear-gradient(135deg,#FF69B4,#FFB6D9);
     color:white;
-    padding:20px 40px;
+    padding:25px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -32,122 +39,241 @@ header{
     font-size:40px;
 }
 
+.logo p{
+    font-size:18px;
+}
+
+
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:15px;
+    margin:5px;
     padding:10px 18px;
-    border-radius:20px;
+    border-radius:25px;
+    background:#FF85C1;
     transition:.3s;
 }
 
 nav a:hover{
     background:white;
-    color:#FF8C00;
+    color:#FF69B4;
 }
+
+
+/* Content */
 
 .container{
     width:90%;
-    max-width:900px;
+    max-width:1000px;
     margin:40px auto;
 }
 
+
 .portfolio-card{
     background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(255,140,0,.25);
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(255,105,180,.25);
 }
+
 
 .portfolio-card h2{
     text-align:center;
-    color:#FF8C00;
-    margin-bottom:25px;
+    color:#FF1493;
+    margin-bottom:30px;
+    font-size:32px;
 }
+
+
+
+/* ผลงาน */
 
 .portfolio-box{
-    background:#FFF3E6;
-    border-left:6px solid #FF8C00;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:20px;
+
+    background:#FFF5FA;
+    border-left:8px solid #FF69B4;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:25px;
     text-align:center;
 }
+
 
 .portfolio-box h3{
-    color:#FF8C00;
-    margin-bottom:10px;
+    color:#FF1493;
+    font-size:24px;
 }
+
 
 .portfolio-box img{
-    width:300px;
+
+    width:320px;
     max-width:100%;
-    border-radius:15px;
-    border:4px solid #FFD199;
-    margin:15px 0;
+    border-radius:20px;
+    border:5px solid #FFC0CB;
+    margin:15px;
+
 }
+
+
+/* Tag */
+
+.tag{
+    display:inline-block;
+    background:#FF69B4;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    margin:10px 0;
+    font-size:14px;
+}
+
 
 .portfolio-box p{
-    font-size:16px;
-    color:#7A4A00;
+    color:#7A284F;
+    font-size:17px;
+    line-height:1.6;
 }
 
+
+
+/* Footer */
+
 footer{
-    background:#FF8C00;
+
+    background:#FF69B4;
     color:white;
     text-align:center;
-    padding:15px;
+    padding:18px;
     margin-top:40px;
+
 }
+
+
 </style>
+
 </head>
+
 
 <body>
 
+
 <header>
+
 <div class="logo">
+
 <h1>Portfolio</h1>
 <p>Apitchaya Busuwa</p>
+
 </div>
 
+
 <nav>
+
 <a href="index.html">หน้าหลัก</a>
 <a href="profile.html">ประวัติส่วนตัว</a>
 <a href="education.html">การศึกษา</a>
 <a href="portfolio.html">ผลงาน</a>
 <a href="contact.html">ติดต่อ</a>
+
 </nav>
+
+
 </header>
 
+
+
 <div class="container">
+
 <div class="portfolio-card">
 
-<h2>🧡 ผลงานของฉัน</h2>
+
+<h2>🌸 ผลงานของฉัน</h2>
+
+
 
 <div class="portfolio-box">
+
 <h3>ผลงานที่ 1</h3>
-<img src="images/2ee948b2-8fad-4fb6-bd44-51dfdd18ae31-1_all_3836.jpg="ผลงานที่ 1">
-<p> ได้ไปดูอุปกรณ์ไฟฟ้าต่างๆที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณหารลาดกระบัง</p>
+
+<span class="tag">กิจกรรมการศึกษา</span>
+<span class="tag">วิศวกรรมไฟฟ้า</span>
+
+
+<br>
+
+<img src="images/2ee948b2-8fad-4fb6-bd44-51dfdd18ae31-1_all_3836.jpg" alt="ผลงานที่ 1">
+
+
+<p>
+ได้เข้าศึกษาดูงานเกี่ยวกับอุปกรณ์ไฟฟ้าต่าง ๆ 
+ที่สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+</p>
+
 </div>
 
+
+
+
 <div class="portfolio-box">
+
 <h3>ผลงานที่ 2</h3>
-<แท่งล่อไฟไปดูที่หุ้มด้วยทองแดง src="images/2822.jpg" alt="ผลงานที่ 2">
-<p></p>
+
+<span class="tag">การเรียนรู้</span>
+<span class="tag">เทคโนโลยี</span>
+
+
+<br>
+
+<img src="images/2822.jpg" alt="ผลงานที่ 2">
+
+
+<p>
+ศึกษาเกี่ยวกับแท่งล่อฟ้าและอุปกรณ์ป้องกันระบบไฟฟ้า
+</p>
+
+
 </div>
+
+
+
 
 <div class="portfolio-box">
+
 <h3>ผลงานที่ 3</h3>
+
+<span class="tag">ศึกษาดูงาน</span>
+<span class="tag">พลังงาน</span>
+
+
+<br>
+
 <img src="images/2775.jpg" alt="ผลงานที่ 3">
-<p>ได้ไปศึกษาดูงานที่โรงไฟฟ้าบางปะกง</p>
+
+
+<p>
+ได้ไปศึกษาดูงานที่โรงไฟฟ้าบางปะกง 
+เรียนรู้เกี่ยวกับกระบวนการผลิตไฟฟ้า
+</p>
+
+
+</div>
+
+
+
 </div>
 
 </div>
-</div>
+
+
 
 <footer>
+
 © 2026 Apitchaya Busuwa Portfolio
+
 </footer>
+
+
 
 </body>
 </html>
