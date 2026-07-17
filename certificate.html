@@ -1,175 +1,508 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>เกียรติบัตรและผลงาน - Portfolio Apitchaya</title>
+
+<title>เกียรติบัตร | Portfolio Apichaya</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
 <style>
 
-/* ==========================
-   Reset CSS
-========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
 }
 
-/* ==========================
-   Body
-========================== */
+
 body{
-    font-family:Tahoma,sans-serif;
-    background:#FFF5FA;
+
+    background:linear-gradient(
+        135deg,
+        #ffd6e8,
+        #fff5fa,
+        #ffc1dc
+    );
+
     color:#6B3556;
+
 }
 
-/* ==========================
-   Header
-========================== */
+
+
+
+/* Header */
+
 header{
-    background:linear-gradient(135deg,#FF69B4,#FFC0CB);
+
+    background:linear-gradient(
+        135deg,
+        #ff4f9a,
+        #ff9dcc
+    );
+
     color:white;
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
+
+    text-align:center;
+
+    padding:45px 20px;
+
 }
 
-.logo h1{
-    font-size:40px;
+
+header h1{
+
+    font-size:45px;
+
 }
 
-/* ==========================
-   Navigation
-========================== */
+
+header p{
+
+    font-size:20px;
+
+}
+
+
+
+
+/* Menu */
+
+nav{
+
+    background:white;
+
+    padding:18px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(255,105,180,.3);
+
+}
+
+
 nav a{
-    color:white;
+
+    color:#ff4f94;
+
     text-decoration:none;
-    margin-left:15px;
+
+    margin:8px;
+
     padding:10px 18px;
-    border-radius:20px;
-    transition:.3s;
+
+    border-radius:25px;
+
+    font-weight:bold;
+
 }
+
 
 nav a:hover{
-    background:white;
-    color:#E91E63;
-}
 
-/* ==========================
-   Container
-========================== */
-.container{
-    width:90%;
-    max-width:900px;
-    margin:40px auto;
-}
+    background:#ff69b4;
 
-/* ==========================
-   Portfolio Card
-========================== */
-.portfolio-card{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(255,105,180,.25);
-}
-
-.portfolio-card h2{
-    text-align:center;
-    color:#E91E63;
-    margin-bottom:25px;
-}
-
-/* ==========================
-   Portfolio Box
-========================== */
-.portfolio-box{
-    background:#FFF0F5;
-    border-left:6px solid #FF69B4;
-    padding:15px;
-    border-radius:10px;
-    margin-bottom:20px;
-    text-align:center;
-}
-
-.portfolio-box h3{
-    color:#E91E63;
-    margin-bottom:10px;
-}
-
-.portfolio-box img{
-    width:300px;
-    border-radius:15px;
-    border:4px solid #FFC0CB;
-    margin:15px 0;
-}
-
-/* ==========================
-   Footer
-========================== */
-footer{
-    background:#FF69B4;
     color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:40px;
+
 }
+
+
+
+
+
+/* Container */
+
+.container{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+
+
+
+
+/* Card */
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 25px rgba(255,105,180,.25);
+
+}
+
+
+
+
+
+.title{
+
+    text-align:center;
+
+    color:#e91e63;
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+/* Gallery */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+
+
+.item{
+
+    background:#fff0f6;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.item:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+
+.item img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:15px;
+
+    border:5px solid #ffc1dc;
+
+}
+
+
+
+
+
+.item h3{
+
+    color:#e91e63;
+
+    margin:15px;
+
+}
+
+
+
+
+
+.item p{
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* Tag */
+
+
+.tag{
+
+    display:inline-block;
+
+    background:linear-gradient(
+        135deg,
+        #ff69b4,
+        #ff9dcc
+    );
+
+    color:white;
+
+    padding:7px 18px;
+
+    border-radius:30px;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* Button */
+
+
+.next{
+
+    display:block;
+
+    width:200px;
+
+    margin:35px auto 0;
+
+    text-align:center;
+
+    background:#ff69b4;
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+}
+
+
+.next:hover{
+
+    background:#e91e63;
+
+}
+
+
+
+
+footer{
+
+    background:#ff69b4;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+
 
 </style>
+
+
 </head>
+
+
 
 <body>
 
+
+
 <header>
-<div class="logo">
-<h1>Portfolio</h1>
-<p>Apitchaya Busuwa</p>
-</div>
+
+<h1>Certificate</h1>
+
+<p>เกียรติบัตร | Apichaya Busuwa</p>
+
+</header>
+
+
+
 
 <nav>
+
 <a href="index.html">หน้าหลัก</a>
+
 <a href="profile.html">ประวัติส่วนตัว</a>
+
 <a href="education.html">การศึกษา</a>
+
 <a href="portfolio.html">ผลงาน</a>
+
+<a href="certificate.html">เกียรติบัตร</a>
+
 <a href="contact.html">ติดต่อ</a>
+
 </nav>
-</header>
+
+
+
+
 
 <div class="container">
 
-<div class="portfolio-card">
 
-<h2>💼 เกียรติบัตรและผลงานของฉัน</h2>
+<div class="card">
 
-<div class="portfolio-box">
-<h3>เกียรติบัตรที่ 1</h3>
-<img src="images/3037 (4).png" alt="ผลงานที่ 1">
-<p>FOREIGN LANGUAGES DEPARTMENT</p>
+
+<h2 class="title">
+🏆 เกียรติบัตรของฉัน
+</h2>
+
+
+
+
+<div class="gallery">
+
+
+
+<div class="item">
+
+<img src="images/3037 (4).png">
+
+<h3>Spelling Bee Competition</h3>
+
+<p>
+FOREIGN LANGUAGES DEPARTMENT
+เข้าร่วมกิจกรรมการแข่งขันภาษาอังกฤษ
+</p>
+
+<span class="tag">
+ภาษาอังกฤษ
+</span>
+
 </div>
 
-<div class="portfolio-box">
-<h3>เกียรติบัตรที่ 2</h3>
-<img src="images/3039.png" alt="ผลงานที่ 2">
-<p>ดาวจรัสแสง ประจำปีการศึกษา 2567</p>
+
+
+
+
+<div class="item">
+
+<img src="images/3039.png">
+
+<h3>ดาวจรัสแสง</h3>
+
+<p>
+ได้รับรางวัลดาวจรัสแสง
+ประจำปีการศึกษา 2567
+</p>
+
+<span class="tag">
+ผลการเรียนดี
+</span>
+
 </div>
 
-<div class="portfolio-box">
-<h3>เกียรติบัตรที่ 3</h3>
-<img src="images/3042.png" alt="ผลงานที่ 3">
-<p>ดาวจรัสแสง ประจำปีการศึกษา 2568</p>
+
+
+
+
+<div class="item">
+
+<img src="images/3042.png">
+
+<h3>ดาวจรัสแสง</h3>
+
+<p>
+ได้รับรางวัลดาวจรัสแสง
+ประจำปีการศึกษา 2568
+</p>
+
+<span class="tag">
+ความสำเร็จ
+</span>
+
 </div>
+
+
+
+
+
+<div class="item">
+
+<img src="images/3052.jpg">
+
+<h3>STEAM DAY CAMP</h3>
+
+<p>
+เข้าร่วมกิจกรรมค่าย STEAM DAY CAMP
+ประจำปีการศึกษา 2569
+</p>
+
+<span class="tag">
+วิทยาศาสตร์
+</span>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<a class="next" href="contact.html">
+
+หน้าถัดไป →
+
+</a>
+
+
 
 </div>
 
 </div>
+
+
+
+
 
 <footer>
-© 2026 Apitchaya Busuwa Portfolio
+
+© 2026 Apichaya Busuwa Portfolio
+
 </footer>
 
+
+
 </body>
+
 </html>
