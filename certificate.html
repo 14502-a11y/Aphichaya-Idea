@@ -74,3 +74,135 @@ nav ul li a:hover{
 .gallery{
     display:grid;
     grid-template-columns:
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificate | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffe4f2,#ffd6ec,#fff0f8);
+}
+
+header{
+    background:#ff66a3;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:36px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h3{
+    color:#ff4f92;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    font-size:15px;
+}
+
+footer{
+    margin-top:50px;
+    background:#ff66a3;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>เกียรติบัตร (Certificates)</h1>
+<p>ผลงานและใบประกาศนียบัตร</p>
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<img src="images/certificate1.jpg" alt="Certificate 1">
+<div class="card-content">
+<h3>เกียรติบัตรที่ 1</h3>
+<p>รายละเอียดของเกียรติบัตร</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/certificate2.jpg" alt="Certificate 2">
+<div class="card-content">
+<h3>เกียรติบัตรที่ 2</h3>
+<p>รายละเอียดของเกียรติบัตร</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/certificate3.jpg" alt="Certificate 3">
+<div class="card-content">
+<h3>เกียรติบัตรที่ 3</h3>
+<p>รายละเอียดของเกียรติบัตร</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Portfolio | Apichaya Busuwa
+</footer>
+
+</body>
+</html>
