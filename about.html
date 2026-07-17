@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ประวัติส่วนตัว | Portfolio</title>
+<title>ประวัติส่วนตัว | Apichaya Busuwa</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -17,112 +17,133 @@
 }
 
 body{
-    background:linear-gradient(135deg,#ffe4ef,#ffd6ea,#fff0f7);
+    background:linear-gradient(135deg,#ffe4ef,#ffd6eb,#fff5fa);
 }
 
 header{
-    background:#ff5ca8;
+    background:#ff69b4;
     color:white;
     padding:20px;
     text-align:center;
-    font-size:30px;
+    font-size:28px;
     font-weight:bold;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1000px;
     margin:40px auto;
-    padding:20px;
-}
-
-.card{
-    background:white;
+    background:#fff;
     border-radius:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-    overflow:hidden;
-    display:flex;
-    flex-wrap:wrap;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(255,105,180,.2);
 }
 
-.left{
-    flex:1;
-    min-width:300px;
-    background:linear-gradient(180deg,#ff8cc8,#ff5ca8);
-    color:white;
+.profile{
     text-align:center;
-    padding:40px 20px;
 }
 
-.left img{
+.profile img{
     width:220px;
     height:220px;
     border-radius:50%;
+    border:6px solid #ff9fcf;
     object-fit:cover;
-    border:8px solid white;
-    margin-bottom:20px;
 }
 
-.left h2{
-    font-size:30px;
+.profile h2{
+    margin-top:20px;
+    color:#ff4f9f;
+    font-size:34px;
 }
 
-.left p{
-    margin-top:10px;
+.profile p{
+    color:#666;
     font-size:18px;
-}
-
-.right{
-    flex:2;
-    padding:40px;
-}
-
-.title{
-    color:#ff4f9a;
-    font-size:28px;
-    margin-bottom:20px;
 }
 
 .info{
+    margin-top:40px;
+}
+
+.info h3{
+    color:#ff4f9f;
     margin-bottom:15px;
+    border-left:6px solid #ff69b4;
+    padding-left:10px;
+}
+
+.info table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.info td{
+    padding:12px;
+    border-bottom:1px solid #eee;
     font-size:18px;
 }
 
-.info span{
-    color:#ff4f9a;
+.info td:first-child{
     font-weight:bold;
+    width:180px;
+    color:#ff4f9f;
 }
 
-.box{
-    background:#fff0f7;
-    padding:20px;
-    border-radius:15px;
-    margin-top:25px;
+.hobby{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:15px;
 }
 
-.box h3{
-    color:#ff4f9a;
-    margin-bottom:10px;
+.hobby span{
+    background:#ffe4f1;
+    color:#ff4f9f;
+    padding:10px 18px;
+    border-radius:30px;
+    font-size:18px;
 }
 
-.button{
-    display:inline-block;
-    margin-top:30px;
-    background:#ff5ca8;
-    color:white;
+.btn{
+    text-align:center;
+    margin-top:40px;
+}
+
+.btn a{
     text-decoration:none;
-    padding:12px 28px;
-    border-radius:50px;
+    background:#ff69b4;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    font-size:18px;
     transition:.3s;
 }
 
-.button:hover{
-    background:#ff2f8b;
+.btn a:hover{
+    background:#ff4f9f;
 }
 
 @media(max-width:768px){
-.card{
-flex-direction:column;
+
+.container{
+    margin:20px;
+    padding:25px;
 }
+
+.profile img{
+    width:170px;
+    height:170px;
+}
+
+.info td{
+    display:block;
+    width:100%;
+}
+
+.info td:first-child{
+    padding-bottom:0;
+}
+
 }
 </style>
 
@@ -135,61 +156,81 @@ flex-direction:column;
 
 <div class="container">
 
-<div class="card">
-
-<div class="left">
+<div class="profile">
 
 <img src="images/profile.jpg" alt="Profile">
 
 <h2>อภิชญา บุสุวะ</h2>
 
-<p>นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
+<p>นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6</p>
 
 </div>
 
-<div class="right">
+<div class="info">
 
-<h2 class="title">ข้อมูลส่วนตัว</h2>
+<h3>ข้อมูลส่วนตัว</h3>
 
-<div class="info"><span>ชื่อ :</span> อภิชญา บุสุวะ</div>
+<table>
+<tr>
+<td>ชื่อ-สกุล</td>
+<td>อภิชญา บุสุวะ</td>
+</tr>
 
-<div class="info"><span>ชื่อเล่น :</span> ไอเดีย</div>
+<tr>
+<td>ชื่อเล่น</td>
+<td>ไอเดีย</td>
+</tr>
 
-<div class="info"><span>วันเกิด :</span> 7 มิถุนายน 2552</div>
+<tr>
+<td>วันเกิด</td>
+<td>7 มิถุนายน 2552</td>
+</tr>
 
-<div class="info"><span>อายุ :</span> 17 ปี</div>
+<tr>
+<td>อายุ</td>
+<td>17 ปี</td>
+</tr>
 
-<div class="info"><span>กำลังศึกษา :</span> ชั้นมัธยมศึกษาปีที่ 6</div>
+<tr>
+<td>กำลังศึกษา</td>
+<td>มัธยมศึกษาปีที่ 6</td>
+</tr>
 
-<div class="info"><span>แผนการเรียน :</span> วิทยาศาสตร์ - คณิตศาสตร์</div>
+<tr>
+<td>แผนการเรียน</td>
+<td>วิทยาศาสตร์ - คณิตศาสตร์</td>
+</tr>
 
-<div class="box">
+</table>
+
+</div>
+
+<div class="info">
 
 <h3>งานอดิเรก</h3>
 
-<p>
-🎵 ฟังเพลง<br>
-🎮 เล่นเกม<br>
-💃 เต้น<br>
-🎹 เล่นดนตรี
-</p>
+<div class="hobby">
+<span>🎵 ฟังเพลง</span>
+<span>🎮 เล่นเกม</span>
+<span>🎹 เล่นดนตรี</span>
+<span>💃 เต้น</span>
+</div>
 
 </div>
 
-<div class="box">
+<div class="info">
 
 <h3>เป้าหมาย</h3>
 
-<p>
-มุ่งมั่นพัฒนาตนเองทั้งด้านวิชาการและทักษะต่าง ๆ เพื่อศึกษาต่อในระดับมหาวิทยาลัย และนำความรู้ไปประกอบอาชีพที่ตนเองใฝ่ฝันในอนาคต
+<p style="font-size:18px;line-height:1.8;color:#555;">
+มุ่งมั่นพัฒนาตนเองทั้งด้านการเรียนและทักษะต่าง ๆ พร้อมเรียนรู้สิ่งใหม่อยู่เสมอ
+เพื่อเตรียมความพร้อมในการศึกษาต่อระดับมหาวิทยาลัย และนำความรู้ไปพัฒนาตนเองในอนาคต
 </p>
 
 </div>
 
-<a href="index.html" class="button">← กลับหน้าหลัก</a>
-
-</div>
-
+<div class="btn">
+<a href="index.html">← กลับหน้าหลัก</a>
 </div>
 
 </div>
