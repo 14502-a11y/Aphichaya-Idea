@@ -6,25 +6,302 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>เกียรติบัตร | Apichaya Busuwa</title>
+<title>หน้าหลัก | Portfolio Apichaya Busuwa</title>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+
+body{
+
+    background:linear-gradient(
+        135deg,
+        #ffd6e8,
+        #fff5fa,
+        #ffb6d9
+    );
+
+    color:#6b3550;
+
+}
+
+
+
+/* Header */
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        #ff4f9a,
+        #ff9dcc
+    );
+
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+
+}
+
+
+header h1{
+
+    font-size:50px;
+
+}
+
+
+header p{
+
+    font-size:22px;
+
+}
+
+
+
+/* Menu */
+
+nav{
+
+    background:white;
+    padding:18px;
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(255,105,180,.3);
+
+}
+
+
+nav a{
+
+    text-decoration:none;
+    color:#ff4f94;
+
+    margin:8px;
+    padding:10px 18px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+}
+
+
+nav a:hover{
+
+    background:#ff69b4;
+    color:white;
+
+}
+
+
+
+/* Container */
+
+.container{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Card */
+
+.card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 25px rgba(255,105,180,.25);
+
+}
+
+
+
+/* Profile */
+
+.profile img{
+
+    width:230px;
+    height:230px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid #ffc1dc;
+
+}
+
+
+
+.profile h2{
+
+    color:#e91e63;
+
+    margin:20px;
+
+    font-size:35px;
+
+}
+
+
+
+.profile p{
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+
+/* Tag */
+
+.tags{
+
+    margin:25px 0;
+
+}
+
+
+
+.tag{
+
+    display:inline-block;
+
+    background:linear-gradient(
+        135deg,
+        #ff69b4,
+        #ff9dcc
+    );
+
+    color:white;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    margin:5px;
+
+    font-size:15px;
+
+    box-shadow:
+    0 4px 10px rgba(255,105,180,.3);
+
+}
+
+
+
+/* Button */
+
+.next{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:#ff69b4;
+
+    color:white;
+
+    padding:12px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+.next:hover{
+
+    background:#e91e63;
+
+}
+
+
+
+/* Footer */
+
+footer{
+
+    background:#ff69b4;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+header h1{
+
+font-size:35px;
+
+}
+
+
+nav a{
+
+display:inline-block;
+
+}
+
+}
+
+
+</style>
+
 
 </head>
+
 
 
 <body>
 
 
+
 <header>
 
-<h1>Certificate</h1>
+<h1>Portfolio</h1>
 
-<p>เกียรติบัตร | Apichaya Busuwa</p>
+<p>Apichaya Busuwa</p>
 
 </header>
+
 
 
 
@@ -50,103 +327,62 @@
 <div class="container">
 
 
-<div class="card">
+<div class="card profile">
 
 
-<h2 class="title">
-🏆 เกียรติบัตร
+<img src="images/profile.jpg" alt="Apichaya">
+
+
+<h2>
+อภิชญา บุสุวะ
 </h2>
 
 
 
-<div class="gallery">
-
-
-<div class="item">
-
-<img src="images/cer1.jpg">
-
-<h3>STEAM DAY CAMP</h3>
-
 <p>
-ผ่านกิจกรรมค่าย STEAM DAY CAMP
-ประจำปีการศึกษา 2569
+
+นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
+
+แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์<br>
+
+โรงเรียนพานทอง
+
 </p>
 
-<span class="tag">
-กิจกรรมวิทยาศาสตร์
-</span>
+
+
+
+<div class="tags">
+
+<span class="tag">Student</span>
+
+<span class="tag">Science - Math</span>
+
+<span class="tag">TCAS Portfolio</span>
+
+<span class="tag">Apichaya</span>
 
 </div>
 
 
 
-
-<div class="item">
-
-<img src="images/cer2.png">
-
-<h3>ดาวจรัสแสง</h3>
 
 <p>
-ได้รับรางวัลดาวจรัสแสง
-ระดับชั้นมัธยมศึกษาปีที่ 5
+
+🌸 ยินดีต้อนรับเข้าสู่ Portfolio ของฉัน<br>
+
+เว็บไซต์รวบรวมประวัติ ผลงาน การศึกษา<br>
+และเกียรติบัตรต่าง ๆ
+
 </p>
 
-<span class="tag">
-ผลการเรียนดีเด่น
-</span>
-
-</div>
 
 
 
+<a class="next" href="profile.html">
 
-<div class="item">
-
-<img src="images/cer3.png">
-
-<h3>Spelling Bee Competition</h3>
-
-<p>
-เข้าร่วมการแข่งขันทักษะภาษาอังกฤษ
-Foreign Languages Department
-</p>
-
-<span class="tag">
-ภาษาอังกฤษ
-</span>
-
-</div>
-
-
-
-
-<div class="item">
-
-<img src="images/cer4.png">
-
-<h3>ดาวจรัสแสง</h3>
-
-<p>
-ได้รับรางวัลดาวจรัสแสง
-ประจำปีการศึกษา 2567
-</p>
-
-<span class="tag">
-ความสำเร็จ
-</span>
-
-</div>
-
-
-
-</div>
-
-
-
-<a class="next" href="contact.html">
 หน้าถัดไป →
+
 </a>
 
 
@@ -158,11 +394,13 @@ Foreign Languages Department
 
 
 
+
 <footer>
 
 © 2026 Portfolio | Apichaya Busuwa
 
 </footer>
+
 
 
 
