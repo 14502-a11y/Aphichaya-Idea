@@ -59,7 +59,7 @@ nav ul li a:hover{
 
 /* เนื้อหา */
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:40px auto;
     background:white;
     border-radius:25px;
@@ -71,30 +71,55 @@ nav ul li a:hover{
 .title{
     text-align:center;
     color:#e65100;
-    font-size:35px;
+    font-size:36px;
     margin-bottom:30px;
 }
 
 
-/* กล่องการศึกษา */
-.edu-card{
-    background:#fff8f0;
-    border-left:8px solid #f58220;
-    padding:25px;
-    border-radius:20px;
-    margin-bottom:20px;
+/* ผลงาน */
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 
-.edu-card h2{
+.project-card{
+    background:#fff8f0;
+    border-radius:20px;
+    overflow:hidden;
+    border:3px solid #ffd180;
+    transition:.3s;
+}
+
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(245,130,32,.3);
+}
+
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+
+.project-content{
+    padding:20px;
+}
+
+
+.project-content h2{
     color:#e65100;
     margin-bottom:10px;
 }
 
 
-.edu-card p{
+.project-content p{
     color:#555;
-    line-height:1.8;
+    line-height:1.7;
 }
 
 
@@ -134,15 +159,18 @@ nav ul{
     margin-top:10px;
 }
 
+
 .container{
     margin:20px;
     padding:25px;
 }
 
+
 .page-nav{
     flex-direction:column;
     gap:15px;
 }
+
 
 .page-nav a{
     text-align:center;
