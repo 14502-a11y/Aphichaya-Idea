@@ -18,45 +18,59 @@
 }
 
 body{
-    background:linear-gradient(135deg,#FFE6F2,#FFF7FB,#FFEAF4);
+    background:linear-gradient(
+        135deg,
+        #ffd6e8,
+        #fff0f7,
+        #ffc1dc
+    );
     color:#555;
 }
 
+
+/* Header */
+
 header{
-    background:linear-gradient(135deg,#FF69B4,#FF9ACD);
-    color:#fff;
+    background:linear-gradient(135deg,#ff4f9a,#ff9dcc);
+    color:white;
     text-align:center;
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 header h1{
-    font-size:48px;
+    font-size:50px;
 }
 
 header p{
-    font-size:20px;
-    margin-top:10px;
+    font-size:22px;
 }
 
+
+/* Navbar */
+
 nav{
-    background:#fff;
-    text-align:center;
+    background:white;
     padding:18px;
+    text-align:center;
     position:sticky;
     top:0;
-    box-shadow:0 3px 10px rgba(255,105,180,.2);
+    z-index:10;
+    box-shadow:0 5px 15px #ffb6d5;
 }
 
 nav a{
-    color:#FF4F94;
     text-decoration:none;
+    color:#ff4f94;
     margin:0 15px;
-    font-weight:bold;
+    font-weight:600;
 }
 
 nav a:hover{
-    color:#E91E63;
+    color:#d81b60;
 }
+
+
+/* Section */
 
 section{
     width:90%;
@@ -64,19 +78,24 @@ section{
     margin:40px auto;
 }
 
+
 .card{
-    background:#fff;
-    border-radius:20px;
-    padding:30px;
-    box-shadow:0 8px 20px rgba(255,105,180,.15);
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(255,105,180,.2);
 }
+
+
+/* Title */
 
 .title{
     text-align:center;
-    color:#E91E63;
-    margin-bottom:25px;
+    color:#e91e63;
     font-size:35px;
+    margin-bottom:30px;
 }
+
 
 /* Profile */
 
@@ -84,251 +103,517 @@ section{
     text-align:center;
 }
 
+
 .profile img{
-    width:220px;
-    height:220px;
+
+    width:230px;
+    height:230px;
     border-radius:50%;
     object-fit:cover;
-    border:6px solid #FFC0CB;
-    margin-bottom:20px;
+
+    border:8px solid #ffc1dc;
+
 }
+
 
 .profile h2{
-    color:#FF4F94;
-    margin-bottom:10px;
+    color:#ff4f94;
+    margin:20px;
 }
 
+
 .profile p{
-    line-height:1.8;
+    line-height:2;
 }
+
+
+
+/* TAG */
+
+.tags{
+    margin-top:20px;
+}
+
+
+.tag{
+
+    display:inline-block;
+    background:#ff69b4;
+    color:white;
+    padding:8px 18px;
+    border-radius:30px;
+    margin:5px;
+    font-size:15px;
+
+}
+
+
 
 /* About */
 
+
 .about-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+
 }
+
 
 .about-card{
-    background:#FFF0F5;
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
+
+background:#fff0f6;
+padding:25px;
+border-radius:20px;
+text-align:center;
+
+transition:.3s;
+
 }
 
-.about-card h3{
-    color:#E91E63;
-    margin-bottom:10px;
+
+.about-card:hover{
+
+transform:translateY(-8px);
+
 }
+
+
+.about-card h3{
+
+color:#e91e63;
+
+}
+
 
 /* Education */
 
+
 .box{
-    background:#FFF0F5;
-    border-left:6px solid #FF69B4;
-    padding:18px;
-    border-radius:15px;
-    margin-bottom:20px;
+
+background:#fff0f6;
+padding:20px;
+border-radius:20px;
+border-left:7px solid #ff69b4;
+margin-bottom:20px;
+
 }
+
 
 .box h3{
-    color:#E91E63;
+
+color:#e91e63;
+
 }
 
-/* Portfolio */
+
+
+/* Gallery */
+
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+
 }
+
 
 .item{
-    background:#FFF0F5;
-    border-radius:15px;
-    overflow:hidden;
-    text-align:center;
+
+background:#fff0f6;
+border-radius:20px;
+overflow:hidden;
+text-align:center;
+
 }
+
 
 .item img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+
+width:100%;
+height:220px;
+object-fit:cover;
+
 }
+
 
 .item h4{
-    color:#E91E63;
-    margin:15px 0 10px;
+
+color:#e91e63;
+margin:15px;
+
 }
 
+
 .item p{
-    padding:0 15px 20px;
+
+padding:0 15px 20px;
+
 }
+
+
 
 /* Contact */
 
+
 .contact{
-    text-align:center;
+
+text-align:center;
+
 }
+
 
 .contact p{
-    margin:12px 0;
-    font-size:18px;
+
+font-size:18px;
+margin:12px;
+
 }
 
+
+
+/* Footer */
+
+
 footer{
-    background:#FF69B4;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
+
+background:#ff69b4;
+color:white;
+text-align:center;
+padding:20px;
+
+}
+
+
+
+@media(max-width:600px){
+
+header h1{
+font-size:35px;
+}
+
+nav a{
+display:inline-block;
+margin:8px;
+}
+
 }
 
 </style>
 
 </head>
+
+
 <body>
 
+
 <header>
-    <h1>Portfolio</h1>
-    <p>Apichaya Busuwa</p>
+
+<h1>Portfolio</h1>
+
+<p>Apichaya Busuwa</p>
+
+
+<div class="tags">
+
+<span class="tag">M.6</span>
+<span class="tag">Science - Math</span>
+<span class="tag">TCAS Portfolio</span>
+
+</div>
+
+
 </header>
 
+
+
+
 <nav>
-    <a href="#home">หน้าหลัก</a>
-    <a href="#about">ประวัติส่วนตัว</a>
-    <a href="#education">การศึกษา</a>
-    <a href="#portfolio">ผลงาน</a>
-    <a href="#contact">ติดต่อ</a>
+
+<a href="#home">หน้าหลัก</a>
+<a href="#about">ประวัติส่วนตัว</a>
+<a href="#education">การศึกษา</a>
+<a href="#portfolio">ผลงาน</a>
+<a href="#contact">ติดต่อ</a>
+
 </nav>
 
-<!-- Home -->
+
+
 
 <section id="home">
+
 <div class="card profile">
 
-<img src="images/IMG_4142.jpeg" alt="รูปโปรไฟล์">
+
+<img src="images/IMG_4142.jpeg">
+
 
 <h2>อภิชญา บุสุวะ</h2>
 
+
 <p>
+
 นักเรียนชั้นมัธยมศึกษาปีที่ 6<br>
-แผนการเรียนวิทยาศาสตร์-คณิตศาสตร์
+
+แผนการเรียนวิทยาศาสตร์ - คณิตศาสตร์
+
 </p>
 
+
+
+<div class="tags">
+
+<span class="tag">Student</span>
+<span class="tag">Portfolio</span>
+<span class="tag">Apichaya</span>
+
 </div>
+
+
+
+</div>
+
 </section>
 
-<!-- About -->
+
+
+
+
 
 <section id="about">
+
 <div class="card">
 
-<h2 class="title">ประวัติส่วนตัว</h2>
+<h2 class="title">
+ประวัติส่วนตัว
+</h2>
+
 
 <div class="about-grid">
 
+
 <div class="about-card">
+
 <h3>ชื่อเล่น</h3>
+
 <p>ไอเดีย</p>
+
 </div>
 
+
 <div class="about-card">
+
 <h3>วันเกิด</h3>
+
 <p>7 มิถุนายน 2552</p>
+
 </div>
 
+
+
 <div class="about-card">
-<h3>ความสามารถพิเศษ</h3>
+
+<h3>ความสามารถ</h3>
+
 <p>เต้น ร้องเพลง เล่นดนตรี</p>
+
 </div>
+
+
 
 <div class="about-card">
+
 <h3>งานอดิเรก</h3>
+
 <p>ฟังเพลง เล่นเกม</p>
-</div>
 
 </div>
 
+
+
 </div>
+
+
+</div>
+
 </section>
 
-<!-- Education -->
+
+
+
+
 
 <section id="education">
+
+
 <div class="card">
 
-<h2 class="title">การศึกษา</h2>
+
+<h2 class="title">
+การศึกษา
+</h2>
+
 
 <div class="box">
-<h3>ระดับประถมศึกษา</h3>
-<p>โรงเรียนเทศบาลตำบลแวงน้อย</p>
+
+<h3>ประถมศึกษา</h3>
+
+<p>
+โรงเรียนเทศบาลตำบลแวงน้อย
+</p>
+
 </div>
+
+
 
 <div class="box">
-<h3>ระดับมัธยมศึกษาตอนต้น</h3>
-<p>โรงเรียนพานทอง</p>
+
+<h3>มัธยมศึกษาตอนต้น</h3>
+
+<p>
+โรงเรียนพานทอง
+</p>
+
 </div>
+
+
+
 
 <div class="box">
-<h3>ระดับมัธยมศึกษาตอนปลาย</h3>
-<p>โรงเรียนพานทอง</p>
-<p>แผนการเรียน วิทยาศาสตร์-คณิตศาสตร์</p>
-</div>
+
+<h3>มัธยมศึกษาตอนปลาย</h3>
+
+<p>
+โรงเรียนพานทอง
+</p>
+
+<p>
+แผนการเรียน วิทยาศาสตร์-คณิตศาสตร์
+</p>
 
 </div>
+
+
+
+</div>
+
 </section>
 
-<!-- Portfolio -->
+
+
+
+
+
 
 <section id="portfolio">
+
 <div class="card">
 
-<h2 class="title">ผลงานและเกียรติบัตร</h2>
+
+<h2 class="title">
+ผลงานและเกียรติบัตร
+</h2>
+
+
 
 <div class="gallery">
 
+
 <div class="item">
-<img src="images/3037 (4).png" alt="">
+
+<img src="images/3037 (4).png">
+
 <h4>เกียรติบัตรที่ 1</h4>
-<p>FOREIGN LANGUAGES DEPARTMENT</p>
+
+<p>
+FOREIGN LANGUAGES DEPARTMENT
+</p>
+
 </div>
 
+
+
 <div class="item">
-<img src="images/3039.png" alt="">
+
+<img src="images/3039.png">
+
 <h4>เกียรติบัตรที่ 2</h4>
-<p>ดาวจรัสแสง ปีการศึกษา 2567</p>
+
+<p>
+ดาวจรัสแสง ปีการศึกษา 2567
+</p>
+
 </div>
+
+
 
 <div class="item">
-<img src="images/3042.png" alt="">
+
+<img src="images/3042.png">
+
 <h4>เกียรติบัตรที่ 3</h4>
-<p>ดาวจรัสแสง ปีการศึกษา 2568</p>
-</div>
+
+<p>
+ดาวจรัสแสง ปีการศึกษา 2568
+</p>
 
 </div>
 
+
+
 </div>
+
+
+</div>
+
 </section>
 
-<!-- Contact -->
+
+
+
+
+
 
 <section id="contact">
+
+
 <div class="card contact">
 
-<h2 class="title">ติดต่อ</h2>
+
+<h2 class="title">
+ติดต่อ
+</h2>
+
 
 <p>📞 092-776-4275</p>
+
 <p>📧 apichayabusuwa@gmail.com</p>
+
 <p>📘 Facebook : Apichaya Busuwa</p>
+
 <p>📷 Instagram : @i.d.e.a.7.6.1.6</p>
 
+
+
 </div>
+
+
 </section>
 
+
+
+
+
 <footer>
+
 © 2026 Portfolio | Apichaya Busuwa
+
 </footer>
 
-< 
+
+</body>
+</html>
